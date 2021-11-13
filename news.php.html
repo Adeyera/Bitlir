@@ -66,22 +66,23 @@
         </ul>
       </ul>
         <ul class="navbar-nav ml-auto">
-          
-                   <li class="nav-item dropdown header-img-icon">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="usernameheaderavatar">FredIs &nbsp; &nbsp;</span><img class="rounded-circle" src="Downloaded Web Site/bitlir.com/assets/img/profile/avatar.svg" alt="avatar">
-            </a>
-            <div class="dropdown-menu">
-              <div class="dropdown-header d-flex flex-column align-items-center">
-                <div class="figure mb-3">
-                  <img class="rounded-circle" src="Downloaded Web Site/bitlir.com/assets/img/profile/avatar.svg" alt="">
+          <li class="nav-item dropdown header-img-icon">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="usernameheaderavatar"><span id="tab-username1"> Username</span> &nbsp; &nbsp;</span><img class="rounded-circle"
+                  src="assets/profile/avatar.svg" alt="avatars">
+              </a>
+              <div class="dropdown-menu">
+                <div class="dropdown-header d-flex flex-column align-items-center">
+                  <div class="figure mb-3">
+                    <img class="rounded-circle" src="assets/img/profile/avatar.svg"
+                      alt="">
+                  </div>
+                  <div class="info text-center">
+                    <p class="name font-weight-bold mb-0" id="tab-username2">User</p>
+                    <p class="email text-muted mb-3" id="email"></p>
+                  </div>
                 </div>
-                <div class="info text-center">
-                                    <p class="name font-weight-bold mb-0">FredIs</p>
-                  <p class="email text-muted mb-3"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="03776c6f7674626d6a6267667a66716243646e626a6f2d606c6e">[email&#160;protected]</a></p>
-                  
-                </div>
-              </div>
               <div class="dropdown-body">
                 <ul class="profile-nav">
                                    <li class="nav-item">
@@ -98,10 +99,10 @@
                   </li>
                  
                   <li class="nav-item">
-                    <a href="logout" class="nav-link red">
+                    <span class="nav-link red">
                       <i class="icon ion-md-power"></i>
-                      <span>Log Out</span>
-                    </a>
+                      <span onclick="logout()">Log Out</span>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -269,6 +270,18 @@
   <script src="assets/js/new-select/new-select.js"></script>
   <script src="assets/js/verifi/verifi.js"></script>
   <script>
+    var uname1 = document.getElementById("tab-username1")
+    var uname2 = document.getElementById("tab-username2")
+    var email = document.getElementById("email")
+    
+    uname1.innerHTML = localStorage.getItem("username")
+    uname2.innerHTML = localStorage.getItem("username")
+    email.innerHTML = localStorage.getItem("email")
+
+    function logout() {
+      localStorage.clear()
+      location.replace("signin.html")
+    }
   function noti(msg, status) {
     toastr[status](msg);
     toastr.options = {

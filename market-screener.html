@@ -77,9 +77,8 @@
                   <img class="rounded-circle" src="assets/profile/avatar.svg" alt="">
                 </div>
                 <div class="info text-center">
-                                    <p class="name font-weight-bold mb-0">FredIs</p>
-                  <p class="email text-muted mb-3"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a3e25263f3d2b24232b2e2f332f382b0a2d272b232664292527">[email&#160;protected]</a></p>
-                  
+                  <p class="name font-weight-bold mb-0" id="tab-username2">User</p>
+                  <p class="email text-muted mb-3" id="email"></p>
                 </div>
               </div>
               <div class="dropdown-body">
@@ -98,10 +97,10 @@
                   </li>
                  
                   <li class="nav-item">
-                    <a href="logout" class="nav-link red">
+                    <span class="nav-link red">
                       <i class="icon ion-md-power"></i>
-                      <span>Log Out</span>
-                    </a>
+                      <span onclick="logout()">Log Out</span>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -257,6 +256,18 @@
   <script src="assets/js/new-select/new-select.js"></script>
   <script src="assets/js/verifi/verifi.js"></script>
   <script>
+      var uname1 = document.getElementById("tab-username1")
+    var uname2 = document.getElementById("tab-username2")
+    var email = document.getElementById("email")
+    
+    uname1.innerHTML = localStorage.getItem("username")
+    uname2.innerHTML = localStorage.getItem("username")
+    email.innerHTML = localStorage.getItem("email")
+
+    function logout() {
+      localStorage.clear()
+      location.replace("signin.html")
+    }
   function noti(msg, status) {
     toastr[status](msg);
     toastr.options = {

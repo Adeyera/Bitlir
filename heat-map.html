@@ -1,123 +1,162 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currency heat map | BITLIR.COM</title>
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link
+      href="assets/img/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="plugins/notifications/toastr.css" />
+    <link rel="stylesheet" href="assets/css/popap-style.css" />
+    <link rel="stylesheet" href="assets/css/stake.css" />
+    <link rel="stylesheet" href="assets/css/popup/popup-verifi.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Currency heat map | BITLIR.COM</title>
-   <link rel="icon" href="assets/img/favicon.ico">
-<link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel="stylesheet" href="plugins/notifications/toastr.css">
-  <link rel="stylesheet" href="assets/css/popap-style.css">
-  <link rel="stylesheet" href="assets/css/stake.css">
-  <link rel="stylesheet" href="assets/css/popup/popup-verifi.css">
-</head>
+  <body id="dark" class="stop-scrolling">
+    <!-- PRELOADER -->
+    <!-- PRELOADER END -->
 
-<body id="dark" class="stop-scrolling">
+    <header class="dark-bb">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-logo-vn" href="/">
+          <img src="assets/img/logo.png" alt="" />
+          <span style="padding-left: 5px">Bitlir</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#headerMenu"
+          aria-controls="headerMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="icon ion-md-menu"></i>
+        </button>
 
-<!-- PRELOADER -->
-<!-- PRELOADER END -->
-
-
- <header class="dark-bb">
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-logo-vn" href="/">
-								<img src="assets/img/logo.png" alt="">
-								 <span style="padding-left: 5px;">Bitlir</span> 
-							  </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="icon ion-md-menu"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="headerMenu">
-        <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-            <a class="nav-link" href="trading.html" role="button">Trading</a>
-          </li>
+        <div class="collapse navbar-collapse" id="headerMenu">
           <ul class="navbar-nav mr-auto">
-            
-            
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Market tools
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="market-crypto.html">Crypto market cap</a>
-              <a class="dropdown-item" href="market-screener.html">Market screener</a>
-              <a class="dropdown-item" href="technical-analysis.html">Technical analysis</a>
-              <a class="dropdown-item" href="cross-rates.html">Cross rates</a>
-<a class="dropdown-item" href="heat-map.html">Currency heat map</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile/invest.html" role="button">Invest</a>
-          </li>
-          
-<li class="nav-item">
-              <a class="nav-link" href="/profile/support.html" role="button">Support </a>
+            <li class="nav-item">
+              <a class="nav-link" href="trading.html" role="button">Trading</a>
             </li>
-<li class="nav-item">
-              <a class="nav-link" href="/profile/wallet.html" role="button">Wallet : 0 USD </a>
-            </li>
-        </ul>
-      </ul>
-        <ul class="navbar-nav ml-auto">
-          
-                   <li class="nav-item dropdown header-img-icon">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="usernameheaderavatar">FredIs &nbsp; &nbsp;</span><img class="rounded-circle" src="assets/profile/avatar.svg" alt="avatar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Market tools
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="market-crypto.html"
+                    >Crypto market cap</a
+                  >
+                  <a class="dropdown-item" href="market-screener.html"
+                    >Market screener</a
+                  >
+                  <a class="dropdown-item" href="technical-analysis.html"
+                    >Technical analysis</a
+                  >
+                  <a class="dropdown-item" href="cross-rates.html"
+                    >Cross rates</a
+                  >
+                  <a class="dropdown-item" href="heat-map.html"
+                    >Currency heat map</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile/invest.html" role="button"
+                  >Invest</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/support.html" role="button"
+                  >Support
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/wallet.html" role="button"
+                  >Wallet : 0 USD
+                </a>
+              </li>
+            </ul>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown header-img-icon">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="usernameheaderavatar"><span id="tab-username1"> Username</span> &nbsp; &nbsp;</span><img class="rounded-circle"
+                src="assets/profile/avatar.svg" alt="avatars">
             </a>
             <div class="dropdown-menu">
               <div class="dropdown-header d-flex flex-column align-items-center">
                 <div class="figure mb-3">
-                  <img class="rounded-circle" src="assets/profile/avatar.svg" alt="">
+                  <img class="rounded-circle" src="assets/img/profile/avatar.svg"
+                    alt="">
                 </div>
                 <div class="info text-center">
-                                    <p class="name font-weight-bold mb-0">FredIs</p>
-                  <p class="email text-muted mb-3"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b6c2d9dac3c1d7d8dfd7d2d3cfd3c4d7f6d1dbd7dfda98d5d9db">[email&#160;protected]</a></p>
-                  
+                  <p class="name font-weight-bold mb-0" id="tab-username2">User</p>
+                  <p class="email text-muted mb-3" id="email"></p>
                 </div>
               </div>
-              <div class="dropdown-body">
-                <ul class="profile-nav">
-                                   <li class="nav-item">
-                    <a href="/profile/wallet.html" class="nav-link">
-                      <i class="icon ion-md-wallet"></i>
-                      <span>My Wallet</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/profile/settings.html" class="nav-link">
-                      <i class="icon ion-md-settings"></i>
-                      <span>Settings</span>
-                    </a>
-                  </li>
-                 
-                  <li class="nav-item">
-                    <a href="#" class="nav-link red">
-                      <i class="icon ion-md-power"></i>
-                      <span>Log Out</span>
-                    </a>
-                  </li>
-                </ul>
+                <div class="dropdown-body">
+                  <ul class="profile-nav">
+                    <li class="nav-item">
+                      <a href="/profile/wallet.html" class="nav-link">
+                        <i class="icon ion-md-wallet"></i>
+                        <span>My Wallet</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/profile/settings.html" class="nav-link">
+                        <i class="icon ion-md-settings"></i>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <span class="nav-link red">
+                        <i class="icon ion-md-power"></i>
+                        <span onclick="logout()">Log Out</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-                </ul>
-      </div>
-    </nav>
-  </header>
-  <div class="container-fluid mtb15">
-    <div class="row">
-      <div class="col-md-12">
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget"></div>
-          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async="">
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid mtb15">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script
+              data-cfasync="false"
+              src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+            ></script>
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js"
+              async=""
+            >
               {
                 "width": "100%",
                   "height": 900,
@@ -140,222 +179,227 @@
                           "locale": "en"
               }
             </script>
+          </div>
+          <!-- TradingView Widget END -->
         </div>
-        <!-- TradingView Widget END -->
       </div>
     </div>
-  </div>
 
- <!-- START FOOTER -->
-		<div class="bottom section-padding">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-						<div class="bottom-logo">
-						
-							<a class="navbar-logo-vn" href="/">
-								<img src="assets/img/logo.png" alt="">
-								 <span style="margin-left: 6px;">bitlir.com</span> 
-							  </a>
-		
-							<p style="width: 230px;">Bitlir is a simple, elegant, and secure platform to build your crypto portfolio.</p>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Features</h4>
-							<ul>
-								<li><a href="/">Home</a></li>
-								<li><a href="trading-15.html">Trading</a></li>
-								<li><a href="/profile/wallet.htmltrading-15.html">Wallet</a></li>
-								<li><a href="/profile/invest.htmltrading-15.html">Invest</a></li>
-								<li><a href="/profile/support.htmltrading-15.html">Support</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Market tools</h4>
-							<ul>
-								<li><a href="market-crypto.html">Crypto market cap</a></li>
-								<li><a href="market-screener.html">Market screener</a></li>
-								<li><a href="technical-analysis.html">Technical analysis</a></li>
-								<li><a href="cross-rates.html">Cross rates</a></li>
-								<li><a href="heat-map.html">Currency heat map</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Legal</h4>
-							<ul>
-								<li><a href="terms.html">Terms of service</a></li>
-								<li><a href="privacy-notice.html">Privacy notice</a></li>
-								<li><a href="cookies-policy.html">Cookies policy</a></li>
-								<li><a href="aml-kyc-policy.html">AML & KYC policy</a></li>
-								<li><a href="fees.html">Fees</a></li>
+    <!-- START FOOTER -->
+    <div class="bottom section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="bottom-logo">
+              <a class="navbar-logo-vn" href="/">
+                <img src="assets/img/logo.png" alt="" />
+                <span style="margin-left: 6px">bitlir.com</span>
+              </a>
 
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Exchange Pair</h4>
-							<ul>
-								<li><a href="trading?pair=BTC_ETH">BTC to ETH</a></li>
-								<li><a href="trading?pair=BTC_ADA">BTC to ADA</a></li>
-								<li><a href="trading?pair=BTC_ATOM">BTC to ATOM</a></li>
-								<li><a href="trading?pair=ETH_LTC">ETH to LTC</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+              <p style="width: 230px">
+                Bitlir is a simple, elegant, and secure platform to build your
+                crypto portfolio.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="bottom-widget">
+              <h4 class="widget-title">Features</h4>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="trading-15.html">Trading</a></li>
+                <li>
+                  <a href="/profile/wallet.htmltrading-15.html">Wallet</a>
+                </li>
+                <li>
+                  <a href="/profile/invest.htmltrading-15.html">Invest</a>
+                </li>
+                <li>
+                  <a href="/profile/support.htmltrading-15.html">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="bottom-widget">
+              <h4 class="widget-title">Market tools</h4>
+              <ul>
+                <li><a href="market-crypto.html">Crypto market cap</a></li>
+                <li><a href="market-screener.html">Market screener</a></li>
+                <li>
+                  <a href="technical-analysis.html">Technical analysis</a>
+                </li>
+                <li><a href="cross-rates.html">Cross rates</a></li>
+                <li><a href="heat-map.html">Currency heat map</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="bottom-widget">
+              <h4 class="widget-title">Legal</h4>
+              <ul>
+                <li><a href="terms.html">Terms of service</a></li>
+                <li><a href="privacy-notice.html">Privacy notice</a></li>
+                <li><a href="cookies-policy.html">Cookies policy</a></li>
+                <li><a href="aml-kyc-policy.html">AML & KYC policy</a></li>
+                <li><a href="fees.html">Fees</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="bottom-widget">
+              <h4 class="widget-title">Exchange Pair</h4>
+              <ul>
+                <li><a href="trading?pair=BTC_ETH">BTC to ETH</a></li>
+                <li><a href="trading?pair=BTC_ADA">BTC to ADA</a></li>
+                <li><a href="trading?pair=BTC_ATOM">BTC to ATOM</a></li>
+                <li><a href="trading?pair=ETH_LTC">ETH to LTC</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div>
-						<div class="copyright">
-							<p style="font-size:12px" ;=""><strong>Bitlir</strong> © Copyright 2021 | Worldwide Distributed Digital Asset Exchange | Trading digitals assets such as Bitcoin involves significant risks.</p>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <div class="copyright">
+              <p style="font-size: 12px" ;="">
+                <strong>Bitlir</strong> © Copyright 2021 | Worldwide Distributed
+                Digital Asset Exchange | Trading digitals assets such as Bitcoin
+                involves significant risks.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="footer-social"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div id="alert_message_modal" class="popap-container" style="display: none">
+      <div class="popap-container-item">
+        <div class="popap-container-item-close" id="alert_close_modal"></div>
+        <div class="popap-container-img">
+          <img src="assets/img/warning.svg" alt="" />
+        </div>
+        <div class="popap-container-item-text-box" style="width: 340px">
+          <h3 class="popap-container-item-title">Warning</h3>
+          <p id="userAlertBox" class="popap-container-item-text"></p>
+          <input type="hidden" id="alertMessageId" value="0" />
+          <div class="popap-container-item-btn" id="close_modal_btn">
+            <span
+              id="alert_close_modal_btn"
+              class="popap-container-item-button"
+            >
+              Close
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
 
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="footer-social">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/amcharts-core.min.js"></script>
+    <script src="assets/js/amcharts.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="plugins/notifications/toastr.js"></script>
+    <script src="assets/js/new-select/new-select.js"></script>
+    <script src="assets/js/verifi/verifi.js"></script>
+    <script>
+      var uname1 = document.getElementById("tab-username1");
+      var uname2 = document.getElementById("tab-username2");
+      var email = document.getElementById("email");
 
-	  <div id="alert_message_modal" class="popap-container" style="display: none;">
-	    <div class="popap-container-item">
-	        <div class="popap-container-item-close" id="alert_close_modal">
-	            
-	        </div>
-	        <div class="popap-container-img">
-	            <img src="assets/img/warning.svg" alt="">
-	        </div>
-	        <div class="popap-container-item-text-box" style="width: 340px;">
-	            <h3 class="popap-container-item-title">
-	                Warning
-	            </h3>
-	            <p id="userAlertBox" class="popap-container-item-text">
-	                
-	            </p>
-	            <input type="hidden" id="alertMessageId" value="0">
-	            <div class="popap-container-item-btn" id="close_modal_btn">
-	                <span id="alert_close_modal_btn" class="popap-container-item-button">
-	                    Close
-	                </span>
-	            </div>
-	        </div>
-	    </div>
-	  </div>
-		<!-- END FOOTER -->	
+      uname1.innerHTML = localStorage.getItem("username");
+      uname2.innerHTML = localStorage.getItem("username");
+      email.innerHTML = localStorage.getItem("email");
 
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/amcharts-core.min.js"></script>
-  <script src="assets/js/amcharts.min.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="plugins/notifications/toastr.js"></script>
-  <script src="assets/js/new-select/new-select.js"></script>
-  <script src="assets/js/verifi/verifi.js"></script>
-  <script>
-  function noti(msg, status) {
-    toastr[status](msg);
-    toastr.options = {
-      "closeButton": false,
-      "debug": false,
-      "newestOnTop": false,
-      "progressBar": false,
-      "rtl": false,
-      "positionClass": "toast-top-right",
-      "preventDuplicates": false,
-      "onclick": null,
-      "showDuration": 300,
-      "hideDuration": 1000,
-      "timeOut": 5000,
-      "extendedTimeOut": 1000,
-      "showEasing": "swing",
-      "hideEasing": "linear",
-      "showMethod": "fadeIn",
-      "hideMethod": "fadeOut"
-    }
-  }
+      function logout() {
+        localStorage.clear();
+        location.replace("signin.html");
+      }
+      function noti(msg, status) {
+        toastr[status](msg);
+        toastr.options = {
+          closeButton: false,
+          debug: false,
+          newestOnTop: false,
+          progressBar: false,
+          rtl: false,
+          positionClass: "toast-top-right",
+          preventDuplicates: false,
+          onclick: null,
+          showDuration: 300,
+          hideDuration: 1000,
+          timeOut: 5000,
+          extendedTimeOut: 1000,
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+        };
+      }
 
-  setInterval(function() {
-  var messageId = $("#alertMessageId").val();
-	  if(messageId == '0') {
-		  $.ajax({
-        url: "ajax/ajax",
-        type: "POST",
-        data: {
-          action: "CHECK_USER_ALERT_MESSAGE"
-        },
-        success: function(response) {
-          if(response != "false") {
+      setInterval(function () {
+        var messageId = $("#alertMessageId").val();
+        if (messageId == "0") {
+          $.ajax({
+            url: "ajax/ajax",
+            type: "POST",
+            data: {
+              action: "CHECK_USER_ALERT_MESSAGE",
+            },
+            success: function (response) {
+              if (response != "false") {
+                var json = JSON.parse(response);
+                var alert_message_text = json["alert_message_text"];
+                var alert_message_id = json["alert_message_id"];
 
-            var json = JSON.parse(response);
-            var alert_message_text = json['alert_message_text'];
-            var alert_message_id = json['alert_message_id'];
-
-            
-            $("#alert_message_modal").css("display", "flex");
-            $("#userAlertBox").html(alert_message_text);
-            $("#alertMessageId").val(alert_message_id);
-
-
-          }
-
+                $("#alert_message_modal").css("display", "flex");
+                $("#userAlertBox").html(alert_message_text);
+                $("#alertMessageId").val(alert_message_id);
+              }
+            },
+          });
         }
-      })
-	  }
-	}, 5000);
+      }, 5000);
 
+      $("#alert_close_modal").on("click", function () {
+        $("#alert_message_modal").css("display", "none");
+        var alertMessageId = $("#alertMessageId").val();
 
-	$("#alert_close_modal").on("click", function() {
-    $("#alert_message_modal").css("display", "none");
-    var alertMessageId = $("#alertMessageId").val();
+        $.ajax({
+          url: "ajax/ajax",
+          type: "POST",
+          data: {
+            action: "VIEWED_ALERT_MESSAGE",
+            message_id: alertMessageId,
+          },
+          success: function (response) {},
+        });
+      });
 
-		  $.ajax({
-	      url: "ajax/ajax",
-	      type: "POST",
-	      data: {
-	        action: "VIEWED_ALERT_MESSAGE",
-	        message_id: alertMessageId
-	      },
-	      success: function(response) {
+      $("#alert_close_modal_btn").on("click", function () {
+        $("#alert_message_modal").css("display", "none");
+        var alertMessageId = $("#alertMessageId").val();
 
-	      }
-	    })
-  });
-
-  $("#alert_close_modal_btn").on("click", function() {
-    $("#alert_message_modal").css("display", "none");
-    var alertMessageId = $("#alertMessageId").val();
-
-		  $.ajax({
-	      url: "ajax/ajax",
-	      type: "POST",
-	      data: {
-	        action: "VIEWED_ALERT_MESSAGE",
-	        message_id: alertMessageId
-	      },
-	      success: function(response) {
-
-	      }
-	    })
-  });
-
-  
-  </script>
-</body>
-
+        $.ajax({
+          url: "ajax/ajax",
+          type: "POST",
+          data: {
+            action: "VIEWED_ALERT_MESSAGE",
+            message_id: alertMessageId,
+          },
+          success: function (response) {},
+        });
+      });
+    </script>
+  </body>
 </html>

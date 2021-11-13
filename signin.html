@@ -220,6 +220,7 @@
   <script src=" assets/js/new-select/new-select.js" ></script>
   <script src=" assets/js/verifi/verifi.js"></script>
   <script>
+    
   function noti(msg, status) {
     toastr[status](msg);
     toastr.options = {
@@ -333,10 +334,22 @@
             password: login_password
           },
           success: function(response) {
-            setTimeout(function() {
-                location.replace("trading.html");
-                console.log(response)
-              }, 500);
+            if(response.response._id){
+              
+            console.log(response)
+            localStorage.setItem("username", response.response.username)
+            localStorage.setItem("email", response.response.email)
+            localStorage.setItem("id", response.response._id)
+            localStorage.setItem("token", response.token)
+              if(localStorage.getItem("redirect")){
+                location.replace(localStorage.getItem("redirect"))
+              }else{
+               location.replace("trading.html");
+              }
+            }
+            // setTimeout(function() {
+            //     location.replace("trading.html");
+            //   }, 0);
             // if(response == "1") {
             //   setTimeout(function() {
             //     location.replace("trading");

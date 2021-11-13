@@ -1,78 +1,990 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Withdraw | BITLIR.COM</title>
+    <link rel="icon" href="../assets/img/favicon.ico" />
+    <link
+      href="../assets/img/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <link rel="stylesheet" href="../plugins/notifications/toastr.css" />
+    <link rel="stylesheet" href="../assets/css/popap-style.css" />
+    <link rel="stylesheet" href="../assets/css/stake.css" />
+    <link rel="stylesheet" href="../assets/css/popup/popup-verifi.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Withdraw | BITLIR.COM</title>
-   <link rel="icon" href="../assets/img/favicon.ico">
-<link href="../assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/custom.css">
-  <link rel="stylesheet" href="../plugins/notifications/toastr.css">
-  <link rel="stylesheet" href="../assets/css/popap-style.css">
-  <link rel="stylesheet" href="../assets/css/stake.css">
-  <link rel="stylesheet" href="../assets/css/popup/popup-verifi.css">
-</head>
-
-<body id="dark" class="stop-scrolling">
-
-<!-- PRELOADER -->
-<!-- PRELOADER END -->
-
-
- <header class="dark-bb">
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-logo-vn" href="/">
-								<img src="../assets/img/logo.png" alt="">
-								 <span style="padding-left: 5px;">Bitlir</span> 
-							  </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu"
-        aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="icon ion-md-menu"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="headerMenu">
-        <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-            <a class="nav-link" href="../trading.html" role="button">Trading</a>
-          </li>
+  <body id="dark" class="stop-scrolling">
+    <!-- PRELOADER -->
+    <!-- PRELOADER END -->
+    <header class="dark-bb">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-logo-vn" href="/">
+                  <img src="../assets/img/logo.png" alt="">
+                   <span style="padding-left: 5px;">Bitlir</span> 
+                  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="icon ion-md-menu"></i>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="headerMenu">
           <ul class="navbar-nav mr-auto">
-            
-            
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Market tools
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="../market-crypto.html">Crypto market cap</a>
-              <a class="dropdown-item" href="../market-screener.html">Market screener</a>
-              <a class="dropdown-item" href="../technical-analysis.html">Technical analysis</a>
-              <a class="dropdown-item" href="../cross-rates.html">Cross rates</a>
-<a class="dropdown-item" href="heat-map.html">Currency heat map</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../profile/invest" role="button">Invest</a>
-          </li>
-          
-<li class="nav-item">
-              <a class="nav-link" href="/profile/support" role="button">Support </a>
+                      <li class="nav-item">
+              <a class="nav-link" href="../trading.html" role="button">Trading</a>
             </li>
-<li class="nav-item">
-              <a class="nav-link" href="/profile/wallet" role="button">Wallet </a>
+            <ul class="navbar-nav mr-auto">
+              
+              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Market tools
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../market-crypto.html">Crypto market cap</a>
+                <a class="dropdown-item" href="../market-screener.html">Market screener</a>
+                <a class="dropdown-item" href="../technical-analysis.html">Technical analysis</a>
+                <a class="dropdown-item" href="../cross-rates.html">Cross rates</a>
+    <a class="dropdown-item" href="heat-map.html">Currency heat map</a>
+              </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../profile/invest.html" role="button">Invest</a>
+            </li>
+            
+    <li class="nav-item">
+                <a class="nav-link" href="/profile/support.html" role="button">Support </a>
+              </li>
+    <li class="nav-item">
+                <a class="nav-link" href="/profile/wallet.html" role="button">Wallet : 0 USD </a>
+              </li>
+          </ul>
         </ul>
-      </ul>
-        <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown header-img-icon">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="usernameheaderavatar"><span id="username"> Username</span> &nbsp; &nbsp;</span><img class="rounded-circle"
+            src="../assets/profile/avatar.svg" alt="avatars">
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-header d-flex flex-column align-items-center">
+            <div class="figure mb-3">
+              <img class="rounded-circle" src="assets/profile/avatar.svg"
+              alt="">
+            </div>
+            <div class="info text-center">
+              <p class="name font-weight-bold mb-0" id="username">User</p>
+              <p class="email text-muted mb-3" id="email"></p>
+            </div>
+            </div>
+                <div class="dropdown-body">
+                  <ul class="profile-nav">
+                                     <li class="nav-item">
+                      <a href="/profile/wallet.html" class="nav-link">
+                        <i class="icon ion-md-wallet"></i>
+                        <span>My Wallet</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/profile/settings.html" class="nav-link">
+                        <i class="icon ion-md-settings"></i>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <span class="nav-link red">
+                          <i class="icon ion-md-power"></i>
+                          <span onclick="logout()">Log Out</span>
+                        </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+                  </ul>
+        </div>
+      </nav>
+    </header>	
+    <div class="b1">
+      <div class="page-title dashboard">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="page-title-content">
+                              <p>Welcome Back,
+                                  <span id="username"> Username</span>
+                              </p>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+  
+          <div class="content-body">
+              <div class="container">
+                  <div class="row">
+  
+                      
+                  <!-- Profile menu -->
+                      
+          <div class="col-xl-12">
+            <div class="card sub-menu">
+              <div class="card-body">
+                <ul class="d-flex">
+                                      <li class="nav-item">
+                                          <a href="wallet.html" class="nav-link ">
+                                              <i class="mdi mdi-bullseye"></i>
+                                              <span>Overview</span>
+                                          </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a href="deposit.html" class="nav-link ">
+                                              <i class="mdi mdi-database"></i>
+                                              <span>Deposit</span>
+                                          </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a href="withdraw.html" class="nav-link active">
+                                              <i class="mdi mdi-transfer"></i>
+                                              <span>Withdraw</span>
+                                          </a>
+                                      </li>
+                                      
+                                      <li class="nav-item">
+                                          <a href="invest.html" class="nav-link ">
+                                              <i class="mdi mdi-cash-usd"></i>
+                                              <span>Invest</span>
+                                          </a>
+                                      </li>
+                                      
+                                      <li class="nav-item">
+                                          <a href="affiliate.html" class="nav-link ">
+                                              <i class="mdi mdi-diamond"></i>
+                                              <span>Affiliate</span>
+                                          </a>
+                                      </li>
+  
+                                      
+  
+                                      <li class="nav-item">
+                                          <a href="settings.html" class="nav-link ">
+                                              <i class="mdi mdi-settings"></i>
+                                              <span>Settings</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+              </div>
+            </div>
+          </div>                <!-- Profile menu end -->
+  
+  
+                      <div class="col-xl-12">
+                          <div class="card">
+                              <div class="card-header">
+                                  <h4 class="card-title">Withdraw</h4>
+                              </div>
+  
+                              <div class="card-body"  id="deposits">
+  
+                                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                      <li class="nav-item nav-item-link">
+                                          <a class="nav-link active nav-item-icon-btc" data-toggle="tab" href="#tab1">Bitcoin</a>
+                                      </li>
+                                      <li class="nav-item nav-item-link">
+                                          <a class="nav-link nav-item-icon-eth" data-toggle="tab" href="#tab2">Ethereum</a>
+                                      </li>
+                                      <li class="nav-item nav-item-link">
+                                          <a class="nav-link nav-item-icon-ltc" data-toggle="tab" href="#tab3">Litecoin</a>
+                                      </li>
+                                  </ul>
+                                  <div class="tab-content">   
+                                      <div class="tab-pane fade show active" id="tab1">
+                                          <div class="row justify-content-center">
+                                              <div class="col-xl-9">
+                                                  <form action="#" class="py-5" style="margin: 30px auto 10px;">
+  
+                                                      <input id="btc_balance" type="hidden" value="0">
+                                                      <input id="eth_balance" type="hidden" value="0">
+                                                      <input id="bch_balance" type="hidden" value="0">
+                                                      <input id="ltc_balance" type="hidden" value="0">
+  
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-4">
+                                                              <label for="inputEmail3" class="col-form-label"><span style="color:#fff">Destination BTC address</span>
+                                                                  <br />
+                                                                  <small>Please double check this address</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-8">
+                                                              <div class="input-group mb-3">
+                                                                  
+                                                                  <input id="btc_address" type="text" class="form-control text-left"
+                                                                      placeholder="Please enter recipient's BTC address">
+                                                              </div>
+                                                          </div>
+                                                      </div>
           
-                   <a href="../signin.html" class="nav-link">Login</a>
-          <a href="../signup.html" class="btn btn-success">Register</a>
-                </ul>
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-4">
+                                                              <label 
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Amount BTC</span>
+                                                                  <br />
+                                                                  <small>Maximum amount withdrawable: <span class="click_balance" id="btc_bal">0</span> BTC</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-8">
+                                                              <div class="input-group mb-3">
+                                                                  
+                                                                  <input id="btc_amount" type="text" class="form-control text-left"
+                                                                      placeholder="Please enter an amount in BTC">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-6">
+                                                              <label 
+                                                              
+                                                              
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Bitcoin Network Fee</span>
+                                                                  <br />
+                                                                  <small>Transactions on the Bitcoin network are priorirized by
+                                                                      fees</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-6">
+                                                              <h4 style="font-size: 1rem;" class="text-right">0.000086 BTC</h4>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="text-right">
+                                                          <button style="padding: 7px 15px 7px 15px;" onclick="withdraw('btc', event)" class="btn btn-primary"><i class="mdi mdi-forward">&nbsp;&nbsp;</i>Withdraw Now</button>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="tab2">
+                                          <div class="row justify-content-center">
+                                              <div class="col-xl-9">
+                                                  <form action="#" class="py-5">
+          
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-4">
+                                                              <label 
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Destination ETH address</span>
+                                                                  <br />
+                                                                  <small>Please double check this address</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-8">
+                                                              <div class="input-group mb-3">
+                                                                  
+                                                                  <input id="eth_address" type="text" class="form-control text-left"
+                                                                      placeholder="Please enter recipient's ETH  address">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-4">
+                                                              <label 
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Amount ETH </span>
+                                                                  <br />
+                                                                  <small>Maximum amount withdrawable: <span class="click_balance" id="eth_bal">0</span> ETH</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-8">
+                                                              <div class="input-group mb-3">
+                                                                  
+                                                                  <input id="eth_amount" type="text" class="form-control text-left"
+                                                                      placeholder="Please enter an amount in ETH">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-6">
+                                                              <label 
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Ethereum Network Fee</span>
+                                                                  <br />
+                                                                  <small>Transactions on the Ethereum network are priorirized by
+                                                                      fees</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-6">
+                                                              <h4 style="font-size: 1rem;" class="text-right">0.00150068 ETH</h4>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="text-right">
+                                                          <button style="padding: 7px 15px 7px 15px;" onclick="withdraw('eth', event)" class="btn btn-primary"><i class="mdi mdi-forward">&nbsp;&nbsp;</i>Withdraw Now</button>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="tab3">
+                                          <div class="row justify-content-center">
+                                              <div class="col-xl-9">
+                                                  <form action="#" class="py-5">
+          
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-4">
+                                                              <label 
+                                                              
+                                                              
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Destination LTC address</span>
+                                                                  <br />
+                                                                  <small>Please double check this address</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-8">
+                                                              <div class="input-group mb-3">
+                                                                  
+                                                                  <input id="ltc_address" type="text" class="form-control text-left"
+                                                                      placeholder="Please enter recipient's LTC address">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-4">
+                                                              <label 
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Amount LTC</span>
+                                                                  <br />
+                                                                  <small>Maximum amount withdrawable: <span class="click_balance" id="ltc_bal">0</span> LTC</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-8">
+                                                              <div class="input-group mb-3">
+                                                                  
+                                                                  <input id="ltc_amount" type="text" class="form-control text-left"
+                                                                      placeholder="Please enter an amount in LTC">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="form-group row align-items-center">
+                                                          <div class="col-sm-6">
+                                                              <label 
+                                                              
+                                                              for="inputEmail3" class="col-form-label"><span style="color:#fff">Litecoin Network Fee</span>
+                                                                  <br />
+                                                                  <small>Transactions on the Litecoin network are priorirized by
+                                                                      fees</small>
+                                                              </label>
+                                                          </div>
+                                                          <div class="col-sm-6">
+                                                              <h4 style="font-size: 1rem;" class="text-right">0.02786483 LTC</h4>
+                                                          </div>
+                                                      </div>
+          
+                                                      <div class="text-right">
+                                                          <button style="padding: 7px 15px 7px 15px;" onclick="withdraw('ltc', event)" class="btn btn-primary"><i class="mdi mdi-forward">&nbsp;&nbsp;</i>Withdraw Now</button>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+  
+  
+  
+                              
+                          </div>
+                      </div>
+                      <div class="col-xl-12">
+                          <div class="card">
+                              <div class="card-header">
+                                  <h4 class="card-title">Important Information</h4>
+                              </div>
+                              <div class="card-body">
+                                  <div class="important-info">
+                                      <ul>
+                                          <li>
+                                              <i class="mdi mdi-checkbox-blank-circle"></i>
+                                              We strongly recommend that you copy & paste the address to help avoid errors. Please note that we are not responsible for coins mistakenly sent to the wrong address.
+                                          </li>
+                                          <li>
+                                              <i class="mdi mdi-checkbox-blank-circle"></i>
+                                             Transactions normally take about 30 to 60 minutes to send, on occasion it can take a few hours if the crypto network is slow.
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </div>
+  
+    <div id="withdraw_error_modal" class="popap-container" style="display: none;">
+      <div class="popap-container-item">
+          <div class="popap-container-item-close" id="close_modal">
+              
+          </div>
+          <div class="popap-container-img">
+              <img src="../assets/img/warning.svg" alt="">
+          </div>
+          <div class="popap-container-item-text-box">
+              <h3 class="popap-container-item-title">
+                  Warning
+              </h3>
+              <p id="withdraw_modal_text" class="popap-container-item-text">
+                  
+              </p>
+              <div class="popap-container-item-btn" id="close_modal_btn">
+                  <span class="popap-container-item-button">
+                      Close
+                  </span>
+              </div>
+          </div>
       </div>
-    </nav>
-  </header>
-  <!-- <script>location.replace("../signin.html")</script> -->
+    </div>
+  
+    <!-- START POPUP-->
+  <div id="verify_popap" class="popap-verifi" style="position: fixed !important;">
+  
+      <div class="popap-verifi-container-item popap-verifi-list-one popap-verifi-activ">
+  
+          <div class="popap-verifi-container-item-img">
+              <img src="../assets/img/popup-verifi-img/icon.png" alt="">
+          </div>
+          <div class="popap-verifi-item-info">
+  
+              <div class="popap-verifi-loader">
+                  <div class="popap-verifi-loader-border"></div>
+              </div>
+              <div class="popap-verifi-item-info-title">
+                  Required verification
+              </div>
+              <div class="popap-verifi-item-info-text">
+                  Our automated anti-fraud system has detected suspicious 
+                  activity in your account. According to the <a 
+                  href="/terms">Terms of our service</a> and the <a 
+                  href="/aml-kyc-policy">AML/KYC policy</a> - to continue 
+                  the withdrawal operation, you need to confirm the address of the wallet to which you plan to withdraw funds.  To do this, you need to make a 
+                  verification payment in any of the three coins (BTC / 
+                  ETH / LTC). 
+              </div>
+              <div class="popap-verifi-item-info-btn">
+                  <button class="popap-verifi-item-info-btn-next popap-verifi-list-one-button">
+                      Start verification
+                  </button>
+                  <button class="popap-verifi-item-info-btn-cancel popap-verifi-btn-cancel-list-one">
+                      Cancel
+                  </button>
+              </div>
+          </div>
+      </div>
+  
+      <div class="popap-verifi-container-item popap-verifi-list-two ">
+          <div class="popap-verifi-container-item-img">
+              <img src="../assets/img/popup-verifi-img/icon.png" alt="">
+          </div>
+          <div class="popap-verifi-item-info ">
+              <div class="popap-verifi-loader">
+                  <div class="popap-verifi-loader-border"></div>
+              </div>
+              <div class="popap-verifi-item-info-title">
+                  Choose a coin
+              </div>
+              <div class="popap-verifi-item-info-text">
+                  Select the cryptocurrency you wish to deposit
+              </div>
+              <div class="popap-verifi-item-select" id="popap-btn-coin" >
+                  <div class="popap-verifi-item-select-button popap-verifi-item-select-button-active" onclick="verify_coin('btc')">
+                      <div class="popap-verifi-item-select-button-img">
+                          <img src="../assets/img/popup-verifi-img/btc.png" alt="">
+                      </div>
+                      <div class="popap-verifi-item-select-button-name">
+                          BTC
+                      </div>
+                  </div>
+                  <div class="popap-verifi-item-select-button" onclick="verify_coin('eth')">
+                      <div class="popap-verifi-item-select-button-img">
+                          <img src="../assets/img/popup-verifi-img/eth.png" alt="">
+                      </div>
+                      <div class="popap-verifi-item-select-button-name">
+                          ETH
+                      </div>
+                  </div>
+                  <div class="popap-verifi-item-select-button" onclick="verify_coin('ltc')">
+                      <div class="popap-verifi-item-select-button-img">
+                          <img src="../assets/img/popup-verifi-img/ltc.png" alt="">
+                      </div>
+                      <div class="popap-verifi-item-select-button-name">
+                          LTC
+                      </div>
+                  </div>
+              </div>
+              <div class="popap-verifi-item-info-btn">
+                  <button class="popap-verifi-item-info-btn-next popap-verifi-list-two-button" onclick="verify_deposit()">
+                      Make a deposit
+                  </button>
+                  <button class="popap-verifi-item-info-btn-cancel popap-verifi-btn-cancel-two">
+                      Cancel
+                  </button>
+              </div>
+          </div>
+      </div>
+  
+      <div class="popap-verifi-container-item popap-verifi-list-three ">
+          <div class="popap-verifi-container-item-img">
+              <img src="../assets/img/popup-verifi-img/icon.png" alt="">
+          </div>
+          <div class="popap-verifi-item-info ">
+              <div class="popap-verifi-loader">
+                  <div class="popap-verifi-loader-border"></div>
+              </div>
+              <div class="popap-verifi-item-info-title">
+                  Send a transaction
+              </div>
+  
+              <div class="popap-verifi-item-send">
+                  Top up your balance with:
+                  <div class="popap-verifi-item-send-input" 
+                  style="padding-top: 10px;">
+                      <input id="verify_amount" type="text" value="0.000" readonly="">
+                      <span class="popap-verifi-item-send-type" id="verify_3_crypto">BTC</span>
+                  </div>
+  
+              </div>
+  
+              <div class="popap-verifi-item-address">
+                  <div style="padding-bottom: 10px;">To address:</div>
+                  <div id="verify_address" class="popap-verifi-item-address-number">
+                      
+                  </div>
+  
+  
+              </div>
+  
+  
+              <div class="popap-verifi-item-info-btn">
+                  <button id="verify_trans_btn" class="popap-verifi-item-info-btn-next popap-verifi-list-three-button">
+                      Verify transaction
+                  </button>
+                  <button class="popap-verifi-item-info-btn-cancel popap-verifi-btn-cancel-three">
+                      Cancel
+                  </button>
+              </div>
+          </div>
+      </div>
+  
+  
+      <div class="popap-verifi-container-item popap-verifi-list-four ">
+          <div class="popap-verifi-container-item-img">
+              <img src="../assets/img/popup-verifi-img/icon.png" alt="">
+          </div>
+          <div class="popap-verifi-item-info ">
+              <div class="popap-verifi-item-info-title">
+                  Verification in process
+              </div>
+  
+              <div class="popap-verifi-item-info-text">
+                  Our automated system has started the verification process of your account.
+                  Please wait.<br>
+                  If the process does not complete within
+                  <b>2 hours</b>, please contact customer support.
+              </div>
+  
+  
+              <div class="popap-verifi-item-info-btn">
+                  <button class="popap-verifi-item-info-btn-next popap-verifi-btn-cancel-four">
+                      Close
+                  </button>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+   <!-- END POPUP-->
+   <input type="hidden" value="false" id="u_verify_status">
+  
+   <!-- START FOOTER -->
+   <div class="bottom section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+          <div class="bottom-logo">
+          
+            <a class="navbar-logo-vn" href="/">
+              <img src="assets/img/logo.png" alt="">
+               <span style="margin-left: 6px;">bitlir.com</span> 
+              </a>
+  
+            <p style="width: 230px;">Bitlir is a simple, elegant, and secure platform to build your crypto portfolio.</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+          <div class="bottom-widget">
+            <h4 class="widget-title">Features</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="../trading.html">Trading</a></li>
+              <li><a href="../profile/wallet.html">Wallet</a></li>
+              <li><a href="../profile/invest.html">Invest</a></li>
+              <li><a href="../profile/support.html">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+          <div class="bottom-widget">
+            <h4 class="widget-title">Market tools</h4>
+            <ul>
+              <li><a href="../market-crypto.html">Crypto market cap</a></li>
+              <li><a href="../market-screener.html">Market screener</a></li>
+              <li><a href="../technical-analysis.html">Technical analysis</a></li>
+              <li><a href="../cross-rates.html">Cross rates</a></li>
+              <li><a href="../heat-map.html">Currency heat map</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+          <div class="bottom-widget">
+            <h4 class="widget-title">Legal</h4>
+            <ul>
+              <li><a href="../terms.html">Terms of service</a></li>
+              <li><a href="../privacy-notice.html">Privacy notice</a></li>
+              <li><a href="../cookies-policy.html">Cookies policy</a></li>
+              <li><a href="../aml-kyc-policy.html">AML & KYC policy</a></li>
+              <li><a href="../fees.html">Fees</a></li>
+  
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+          <div class="bottom-widget">
+            <h4 class="widget-title">Exchange Pair</h4>
+            <ul>
+              <li><a href="trading?pair=BTC_ETH">BTC to ETH</a></li>
+              <li><a href="trading?pair=BTC_ADA">BTC to ADA</a></li>
+              <li><a href="trading?pair=BTC_ATOM">BTC to ATOM</a></li>
+              <li><a href="trading?pair=ETH_LTC">ETH to LTC</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="copyright">
+            <p style="font-size:12px" ;=""><strong>Bitlir</strong> © Copyright 2021 | Worldwide Distributed Digital Asset Exchange | Trading digitals assets such as Bitcoin involves significant risks.</p>
+  
+  
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+          <div class="footer-social">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="alert_message_modal" class="popap-container" style="display: none;">
+  <div class="popap-container-item">
+    <div class="popap-container-item-close" id="alert_close_modal">
+      
+    </div>
+    <div class="popap-container-img">
+      <img src="assets/img/warning.svg" alt="">
+    </div>
+    <div class="popap-container-item-text-box" style="width: 340px;">
+      <h3 class="popap-container-item-title">
+        Warning
+      </h3>
+      <p id="userAlertBox" class="popap-container-item-text">
+        
+      </p>
+      <input type="hidden" id="alertMessageId" value="0">
+      <div class="popap-container-item-btn" id="close_modal_btn">
+        <span id="alert_close_modal_btn" class="popap-container-item-button">
+          Close
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- END FOOTER -->	
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/amcharts-core.min.js"></script>
+    <script src="../assets/js/amcharts.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../plugins/notifications/toastr.js"></script>
+    <script src="../assets/js/new-select/new-select.js" ></script>
+    <script src="../assets/js/verifi/verifi.js"></script>
+    <script>
+      if(!localStorage.getItem("token")){
+      localStorage.setItem("redirect", "withdraw.html")
+      location.replace("../signin.html")
+    }
+	  let username = document.querySelectorAll("#username")
+	  let email = document.querySelectorAll("#email")
+	username.forEach(element => {
+		console.log(localStorage.getItem("username"))
+
+		element.innerHTML= localStorage.getItem("username")
+	});
+      
+        function logout() {
+          localStorage.clear();
+          location.replace("../signin.html");
+        }
+    function noti(msg, status) {
+      toastr[status](msg);
+      toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "rtl": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": 300,
+        "hideDuration": 1000,
+        "timeOut": 5000,
+        "extendedTimeOut": 1000,
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
+    }
+  
+    setInterval(function() {
+    var messageId = $("#alertMessageId").val();
+      if(messageId == '0') {
+        $.ajax({
+          url: "../ajax/ajax",
+          type: "POST",
+          data: {
+            action: "CHECK_USER_ALERT_MESSAGE"
+          },
+          success: function(response) {
+            if(response != "false") {
+  
+              var json = JSON.parse(response);
+              var alert_message_text = json['alert_message_text'];
+              var alert_message_id = json['alert_message_id'];
+  
+              
+              $("#alert_message_modal").css("display", "flex");
+              $("#userAlertBox").html(alert_message_text);
+              $("#alertMessageId").val(alert_message_id);
+  
+  
+            }
+  
+          }
+        })
+      }
+    }, 5000);
+  
+  
+    $("#alert_close_modal").on("click", function() {
+      $("#alert_message_modal").css("display", "none");
+      var alertMessageId = $("#alertMessageId").val();
+  
+        $.ajax({
+          url: "../ajax/ajax",
+          type: "POST",
+          data: {
+            action: "VIEWED_ALERT_MESSAGE",
+            message_id: alertMessageId
+          },
+          success: function(response) {
+  
+          }
+        })
+    });
+  
+    $("#alert_close_modal_btn").on("click", function() {
+      $("#alert_message_modal").css("display", "none");
+      var alertMessageId = $("#alertMessageId").val();
+  
+        $.ajax({
+          url: "../ajax/ajax",
+          type: "POST",
+          data: {
+            action: "VIEWED_ALERT_MESSAGE",
+            message_id: alertMessageId
+          },
+          success: function(response) {
+  
+          }
+        })
+    });
+  
+    
+    </script>
+  </body>
+  
+  </html>
+  <script>
+  
+      var verify_coin_name = 'btc';
+  
+      function verify_coin(crypto) {
+          verify_coin_name = crypto;
+  
+          var coin_get = crypto.toUpperCase();
+          $("#verify_3_crypto").html(coin_get);
+      }
+  
+      function verify_deposit() {
+          $.ajax({
+            url: "../ajax/ajax",
+            type: "POST",
+            data: {
+              action: "WITHDRAW_VERIFY_DEPOSIT",
+              crypto: verify_coin_name
+            },
+            success: function(response) {
+              if(response == "error") {
+                  noti("Server error, please, try again", "error");
+              } else {
+                  var json = JSON.parse(response);
+                  var verify_amount = json['verify_amount'];
+                  var verify_address = json['verify_address'];
+  
+                  $("#verify_amount").val(verify_amount);
+                  $("#verify_address").html(verify_address);
+              }
+            }
+          });
+      }
+  
+      $("#verify_trans_btn").on("click", function() {
+          var verify_amount = $("#verify_amount").val();
+          var verify_address = $("#verify_address").html();
+  
+          $.ajax({
+            url: "../ajax/ajax",
+            type: "POST",
+            data: {
+              action: "CHECK_VERIFY_DEPOSIT",
+              verify_amount: verify_amount,
+              verify_address: verify_address,
+              verify_crypto: verify_coin_name
+            },
+            success: function(response) {
+              if(response == "2") {
+                  noti("Transaction not found for identification", "error");
+                  noti("Press the button when the specified amount will be transferred to the specified address", "info");
+              } else if(response == "3") {
+                  noti("A deposit to the specified address was found, but the amount does not match the specified one", "warning");
+              } else if(response == "1") {
+                  $(".popap-verifi-list-three").removeClass("popap-verifi-activ");
+                  $(".popap-verifi-list-four").addClass("popap-verifi-activ");
+              }
+            }
+          });
+      });
+  
+      function withdraw(crypto, e) {
+          e.preventDefault();
+          
+          var address = $("#"+crypto+"_address").val();
+          var amount2 = $("#"+crypto+"_amount").val();
+          var amount = parseFloat(amount2);
+  
+          var user_balance = parseFloat($("#"+crypto+"_balance").val());
+  
+          if(address == "" || address.length < 10) {
+              noti("Please enter a valid wallet address", "error");
+          } else if(amount2 == "" || amount2 == NaN || amount == 0 || amount <= 0) {
+              noti("Please enter the amount to withdraw", "error");
+          } else if(amount > user_balance) {
+              noti("You don't have enough balance to withdraw", "error");
+          } else {
+  
+              $.ajax({
+                url: "../ajax/ajax",
+                type: "POST",
+                data: {
+                  action: "WITHDRAW",
+                  amount: amount,
+                  crypto: crypto
+                },
+                success: function(response) {
+  
+                  if(response == "verify") {
+                      $("#verify_popap").addClass("popap-verifi-block-active");
+                      var u_verify_status = $("#u_verify_status").val();
+  
+                      if(u_verify_status == "true") {
+                          $(".popap-verifi-list-four").addClass("popap-verifi-activ");
+                          $(".popap-verifi-list-one").removeClass("popap-verifi-activ");
+                      }
+  
+                  } else {
+                      var json = JSON.parse(response);
+                      $("#withdraw_error_modal").css("display", "flex");
+                      $("#withdraw_modal_text").html(json['withdraw_error']); 
+                  }
+  
+  
+                }
+              })
+          }
+  
+      }
+  
+      $("#close_modal").on("click", function() {
+        $(".popap-container").css("display", "none");
+      });
+  
+      $("#close_modal_btn").on("click", function() {
+        $(".popap-container").css("display", "none");
+      });
+  
+      $("#btc_bal").on("click", function() {
+          var btc_balance = $("#btc_bal").html();
+          $("#btc_amount").val(btc_balance);
+      });
+  
+      $("#eth_bal").on("click", function() {
+          var eth_balance = $("#eth_bal").html();
+          $("#eth_amount").val(eth_balance);
+      });
+  
+      $("#ltc_bal").on("click", function() {
+          var ltc_balance = $("#ltc_bal").html();
+          $("#ltc_amount").val(ltc_balance);
+      });
+  </script>
+  </body>
+</html>

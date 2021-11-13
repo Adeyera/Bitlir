@@ -351,10 +351,21 @@
           success: function (response) {
             noti("Account created successfully", "success");
             noti("You will now be redirected to the login page", "info");
-            setTimeout(function () {
-              location.replace("signin");
+            if(response.id){
               console.log(response)
-            }, 3500);
+            localStorage.setItem("username", response.username)
+            localStorage.setItem("email", response.email)
+            localStorage.setItem("id", response.id)
+            localStorage.setItem("token", response.token)
+            
+            setTimeout(function () {
+              location.replace("signin.html");
+              console.log(response)
+            }, 350);
+            }
+            else{
+              noti("An unexpected error has occurred, please try again", "error");
+            }
             // if(response == "1") {
             //   noti("Account created successfully", "success");
             //   noti("You will now be redirected to the login page", "info");

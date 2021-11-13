@@ -1,579 +1,861 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AML & KYC policy | BITLIR.COM</title>
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link
+      href="assets/img/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="plugins/notifications/toastr.css" />
+    <link rel="stylesheet" href="assets/css/popap-style.css" />
+    <link rel="stylesheet" href="assets/css/stake.css" />
+    <link rel="stylesheet" href="assets/css/popup/popup-verifi.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AML & KYC policy | BITLIR.COM</title>
-   <link rel="icon" href="assets/img/favicon.ico">
-<link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel="stylesheet" href="plugins/notifications/toastr.css">
-  <link rel="stylesheet" href="assets/css/popap-style.css">
-  <link rel="stylesheet" href="assets/css/stake.css">
-  <link rel="stylesheet" href="assets/css/popup/popup-verifi.css">
-</head>
+  <body id="dark" class="stop-scrolling">
+    <!-- PRELOADER -->
+    <!-- PRELOADER END -->
 
-<body id="dark" class="stop-scrolling">
+    <header class="dark-bb">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-logo-vn" href="/">
+          <img src="assets/img/logo.png" alt="" />
+          <span style="padding-left: 5px">Bitlir</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#headerMenu"
+          aria-controls="headerMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="icon ion-md-menu"></i>
+        </button>
 
-<!-- PRELOADER -->
-<!-- PRELOADER END -->
-
-
- <header class="dark-bb">
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-logo-vn" href="/">
-								<img src="assets/img/logo.png" alt="">
-								 <span style="padding-left: 5px;">Bitlir</span> 
-							  </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="icon ion-md-menu"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="headerMenu">
-        <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-            <a class="nav-link" href="trading" role="button">Trading</a>
-          </li>
+        <div class="collapse navbar-collapse" id="headerMenu">
           <ul class="navbar-nav mr-auto">
-            
-            
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Market tools
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="market-crypto">Crypto market cap</a>
-              <a class="dropdown-item" href="market-screener">Market screener</a>
-              <a class="dropdown-item" href="technical-analysis">Technical analysis</a>
-              <a class="dropdown-item" href="cross-rates">Cross rates</a>
-<a class="dropdown-item" href="heat-map">Currency heat map</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile/invest" role="button">Invest</a>
-          </li>
-          
-<li class="nav-item">
-              <a class="nav-link" href="/profile/support" role="button">Support </a>
+            <li class="nav-item">
+              <a class="nav-link" href="trading" role="button">Trading</a>
             </li>
-<li class="nav-item">
-              <a class="nav-link" href="/profile/wallet" role="button">Wallet : 0 USD </a>
-            </li>
-        </ul>
-      </ul>
-        <ul class="navbar-nav ml-auto">
-          
-                   <li class="nav-item dropdown header-img-icon">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="usernameheaderavatar">FredIs &nbsp; &nbsp;</span><img class="rounded-circle" src="Downloaded Web Site/bitlir.com/assets/img/profile/avatar.svg" alt="avatar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Market tools
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="market-crypto"
+                    >Crypto market cap</a
+                  >
+                  <a class="dropdown-item" href="market-screener"
+                    >Market screener</a
+                  >
+                  <a class="dropdown-item" href="technical-analysis"
+                    >Technical analysis</a
+                  >
+                  <a class="dropdown-item" href="cross-rates">Cross rates</a>
+                  <a class="dropdown-item" href="heat-map">Currency heat map</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile/invest" role="button"
+                  >Invest</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/support" role="button"
+                  >Support
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/wallet" role="button"
+                  >Wallet : 0 USD
+                </a>
+              </li>
+            </ul>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown header-img-icon">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="usernameheaderavatar"><span id="tab-username1"> Username</span> &nbsp; &nbsp;</span><img class="rounded-circle"
+                src="assets/profile/avatar.svg" alt="avatars">
             </a>
             <div class="dropdown-menu">
               <div class="dropdown-header d-flex flex-column align-items-center">
                 <div class="figure mb-3">
-                  <img class="rounded-circle" src="Downloaded Web Site/bitlir.com/assets/img/profile/avatar.svg" alt="">
+                  <img class="rounded-circle" src="assets/img/profile/avatar.svg"
+                    alt="">
                 </div>
                 <div class="info text-center">
-                                    <p class="name font-weight-bold mb-0">FredIs</p>
-                  <p class="email text-muted mb-3"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="50243f3c2527313e393134352935223110373d31393c7e333f3d">[email&#160;protected]</a></p>
-                  
+                  <p class="name font-weight-bold mb-0" id="tab-username2">User</p>
+                  <p class="email text-muted mb-3" id="email"></p>
                 </div>
               </div>
-              <div class="dropdown-body">
-                <ul class="profile-nav">
-                                   <li class="nav-item">
-                    <a href="/profile/wallet" class="nav-link">
-                      <i class="icon ion-md-wallet"></i>
-                      <span>My Wallet</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="Downloaded Web Site/bitlir.com/profile/settings.html" class="nav-link">
-                      <i class="icon ion-md-settings"></i>
-                      <span>Settings</span>
-                    </a>
-                  </li>
-                 
-                  <li class="nav-item">
-                    <a href="logout" class="nav-link red">
-                      <i class="icon ion-md-power"></i>
-                      <span>Log Out</span>
-                    </a>
-                  </li>
-                </ul>
+                <div class="dropdown-body">
+                  <ul class="profile-nav">
+                    <li class="nav-item">
+                      <a href="/profile/wallet" class="nav-link">
+                        <i class="icon ion-md-wallet"></i>
+                        <span>My Wallet</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="Downloaded Web Site/bitlir.com/profile/settings.html"
+                        class="nav-link"
+                      >
+                        <i class="icon ion-md-settings"></i>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <span class="nav-link red">
+                        <i class="icon ion-md-power"></i>
+                        <span onclick="logout()">Log Out</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-                </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="b1">
+      <div class="page-title dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="col-6"></div>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>	
-<div class="b1">
-	<div class="page-title dashboard">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6"> </div>
-                    
+
+      <div class="content-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">AML & KYC policy</h4>
                 </div>
-            </div>
-        </div>
+                <div class="card-body">
+                  <div class="row justify-content-center">
+                    <div class="textinfo">
+                      <p>
+                        The purposes of the Bitlir&rsquo;s Anti-Money
+                        Laundering, Counter-Terrorist Financing and Know Your
+                        Customer Policy (hereinafter &mdash; the &ldquo;<strong
+                          >AML/KYC Policy</strong
+                        >&ldquo;) is to identify, prevent and mitigate possible
+                        risks of Bitlir being involved in illegal activity.
+                      </p>
 
-        <div class="content-body">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="card-header">
-                              <h4 class="card-title">AML & KYC policy</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="row justify-content-center">
-                                    <div class="textinfo"> 
-								<p>The purposes of the Bitlir&rsquo;s Anti-Money Laundering, Counter-Terrorist Financing and Know Your Customer Policy (hereinafter &mdash; the &ldquo;<strong>AML/KYC Policy</strong>&ldquo;) is to identify, prevent and mitigate possible risks of Bitlir being involved in illegal activity.</p>
+                      <p>
+                        To confirm with international and local regulations,
+                        Bitlir has implemented effective internal procedures to
+                        prevent money laundering, terrorist financing, drug and
+                        human trafficking, proliferation of weapons of mass
+                        destruction, corruption and bribery and to react
+                        correspondingly in case of any form of suspicious
+                        activity from its Users.
+                      </p>
 
-<p>To confirm with international and local regulations, Bitlir has implemented effective internal procedures to prevent money laundering, terrorist financing, drug and human trafficking, proliferation of weapons of mass destruction, corruption and bribery and to react correspondingly in case of any form of suspicious activity from its Users.</p>
+                      <p>
+                        <strong>Money Laundering</strong>&nbsp;can be defined
+                        as: &lsquo;the conversion or transfer of property,
+                        knowing that such property is derived from criminal
+                        activity, or from an act of participation in such
+                        activity, for the purposes of concealing or disguising
+                        the illicit origin of the property, or assisting any
+                        person who is involved in the commission of such
+                        activity to evade the legal consequences of his
+                        action.&rsquo;
+                      </p>
 
-<p><strong>Money Laundering</strong>&nbsp;can be defined as: &lsquo;the conversion or transfer of property, knowing that such property is derived from criminal activity, or from an act of participation in such activity, for the purposes of concealing or disguising the illicit origin of the property, or assisting any person who is involved in the commission of such activity to evade the legal consequences of his action.&rsquo;</p>
+                      <p>
+                        <strong>Terrorist Financing</strong>&nbsp;can be defined
+                        as: &lsquo;the wilful provision or collection, by any
+                        means, directly or indirectly, of funds with the
+                        intention that the funds should be used, or in the
+                        knowledge that they are to be used, in order to carry
+                        out terrorist acts.&rsquo;
+                      </p>
 
-<p><strong>Terrorist Financing</strong>&nbsp;can be defined as: &lsquo;the wilful provision or collection, by any means, directly or indirectly, of funds with the intention that the funds should be used, or in the knowledge that they are to be used, in order to carry out terrorist acts.&rsquo;</p>
+                      <p>
+                        All firms must adhere to the Money Laundering, Terrorist
+                        Financing and Transfer of Funds (Information on the
+                        Payer) Regulations 2017 (MLRs), and be aware of the
+                        guidance set down by the Joint Money Laundering Steering
+                        Group (JMLSG) which provides guidelines within the
+                        United Kingdom on how firms should conduct Due Diligence
+                        on their customers, and the recommendations from the
+                        Financial Action Task Force (FATF), an
+                        inter-governmental body whose purpose is the development
+                        and promotion of national and international policies to
+                        combat money laundering and terrorist financing.
+                      </p>
 
-<p>All firms must adhere to the Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 (MLRs), and be aware of the guidance set down by the Joint Money Laundering Steering Group (JMLSG) which provides guidelines within the United Kingdom on how firms should conduct Due Diligence on their customers, and the recommendations from the Financial Action Task Force (FATF), an inter-governmental body whose purpose is the development and promotion of national and international policies to combat money laundering and terrorist financing.</p>
+                      <p>
+                        <b>Other legislation in relation to AML/KYC are:</b>
+                      </p>
+                      <i>
+                        <ul>
+                          <li>
+                            5th Anti-Money Laundering Directive ((EU) 2018/843)
+                          </li>
+                          <li>The Proceeds of Crime Act 2002;</li>
+                          <li>Terrorism Act 2000 and 2001;</li>
+                          <li>Counter-Terrorism Act 2008;</li>
+                          <li>HM Treasury Sanction Notices;</li>
+                          <li>FCA Handbook.</li>
+                        </ul>
 
-<p><b>Other legislation in relation to AML/KYC are:</b></p>
-<i>
-<ul>
-	<li>5th Anti-Money Laundering Directive ((EU) 2018/843)</li>
-	<li>The Proceeds of Crime Act 2002;</li>
-	<li>Terrorism Act 2000 and 2001;</li>
-	<li>Counter-Terrorism Act 2008;</li>
-	<li>HM Treasury Sanction Notices;</li>
-	<li>FCA Handbook.</li>
-</ul>
+                        <p>AML/KYC Policy includes:</p>
 
-<p>AML/KYC Policy includes:</p>
+                        <ul>
+                          <li>Verification procedure;</li>
+                          <li>Role of the Chief Compliance Officer;</li>
+                          <li>Transactions Monitoring;</li>
+                          <li>Risk Assessment:</li>
+                          <li>Country of Residence.</li>
+                        </ul>
+                      </i>
 
-<ul>
-	<li>Verification procedure;</li>
-	<li>Role of the Chief Compliance Officer;</li>
-	<li>Transactions Monitoring;</li>
-	<li>Risk Assessment:</li>
-	<li>Country of Residence.</li>
-</ul></i>
+                      <p>&nbsp;</p>
 
-<p>&nbsp;</p>
+                      <p><strong>Verification procedures</strong></p>
 
-<p><strong>Verification procedures</strong></p>
+                      <p>
+                        To help fight the funding of terrorism and money
+                        laundering activities, the Law requires all financial
+                        institutions to obtain, verify and record information
+                        that identifies each person or entity who opens an
+                        Account. We are required by Law to ask you to provide
+                        your name, address, date of birth and other information
+                        about you, your organisation or persons related to your
+                        organisation that will allow us to identify you before
+                        we approve your Account. We also may ask you to provide
+                        certain identifying documents, such as your
+                        driver&rsquo;s license or passport or your
+                        organisation&rsquo;s articles of incorporation and may
+                        obtain credit and other consumer reports to assist us in
+                        verifying your identity and in determining whether you
+                        satisfy our account criteria. Unless you provide the
+                        requested information and documentation, we may not be
+                        able to open your Account.
+                      </p>
 
-<p>To help fight the funding of terrorism and money laundering activities, the Law requires all financial institutions to obtain, verify and record information that identifies each person or entity who opens an Account. We are required by Law to ask you to provide your name, address, date of birth and other information about you, your organisation or persons related to your organisation that will allow us to identify you before we approve your Account. We also may ask you to provide certain identifying documents, such as your driver&rsquo;s license or passport or your organisation&rsquo;s articles of incorporation and may obtain credit and other consumer reports to assist us in verifying your identity and in determining whether you satisfy our account criteria. Unless you provide the requested information and documentation, we may not be able to open your Account.</p>
+                      <p>
+                        By applying for an Bitlir Account, you agree to provide
+                        the information and documentation requested by Bitlir
+                        and consent to Bitlir&rsquo;s acquisition of credit and
+                        other consumer reports about you for the purposes
+                        described above.
+                      </p>
 
-<p>By applying for an Bitlir Account, you agree to provide the information and documentation requested by Bitlir and consent to Bitlir&rsquo;s acquisition of credit and other consumer reports about you for the purposes described above.</p>
+                      <p>
+                        The Bitlir&rsquo;s Customer due diligence
+                        (&ldquo;<strong>CDD</strong>&ldquo;) procedure requires
+                        the Users to provide Bitlir with reliable, independent
+                        source documents to identify them and confirm their
+                        residential address. Such documents may include, for
+                        example, a national ID card, an international passport,
+                        a bank statement, a utility bill. For such purposes,
+                        Bitlir reserves the right to collect the Users&rsquo;
+                        identification information for the purposes of
+                        compliance with its AML/CFT and KYC Policy.
+                      </p>
 
-<p>The Bitlir&rsquo;s Customer due diligence (&ldquo;<strong>CDD</strong>&ldquo;) procedure requires the Users to provide Bitlir with reliable, independent source documents to identify them and confirm their residential address. Such documents may include, for example, a national ID card, an international passport, a bank statement, a utility bill. For such purposes, Bitlir reserves the right to collect the Users&rsquo; identification information for the purposes of compliance with its AML/CFT and KYC Policy.</p>
+                      <p>
+                        Bitlir will take steps to confirm the authenticity of
+                        documents and information provided by Users. Bitlir will
+                        also look to verify identification information through
+                        secondary sources, and Bitlir reserves the right to
+                        investigate further the cases of Users where Bitlir is
+                        not satisfied with the documentation submitted.
+                      </p>
 
-<p>Bitlir will take steps to confirm the authenticity of documents and information provided by Users. Bitlir will also look to verify identification information through secondary sources, and Bitlir reserves the right to investigate further the cases of Users where Bitlir is not satisfied with the documentation submitted.</p>
+                      <p>
+                        Bitlir reserves the right to verify the identity of the
+                        User on an ongoing basis, especially when its
+                        identification information has been changed or its
+                        activities appear suspicious (unusual for a particular
+                        User). In addition, Bitlir reserves the right to request
+                        from the Users current documents, even if they have been
+                        authenticated in the past.
+                      </p>
 
-<p>Bitlir reserves the right to verify the identity of the User on an ongoing basis, especially when its identification information has been changed or its activities appear suspicious (unusual for a particular User). In addition, Bitlir reserves the right to request from the Users current documents, even if they have been authenticated in the past.</p>
+                      <p>
+                        Information about the user&rsquo;s identification will
+                        be collected, stored, shared and protected strictly in
+                        accordance with the Bitlir&rsquo;s&nbsp;Privacy
+                        Policy&nbsp;and relevant rules. The User agrees that if
+                        any information provided in the Account application
+                        changes, ceases to be true or becomes materially
+                        misleading (including, but not limited to, the ownership
+                        of the Account) then the User will notify Bitlir of the
+                        changes.
+                      </p>
 
-<p>Information about the user&rsquo;s identification will be collected, stored, shared and protected strictly in accordance with the Bitlir&rsquo;s&nbsp;Privacy Policy&nbsp;and relevant rules. The User agrees that if any information provided in the Account application changes, ceases to be true or becomes materially misleading (including, but not limited to, the ownership of the Account) then the User will notify Bitlir of the changes.</p>
+                      <p>
+                        After confirming the identity of the user, Bitlir may
+                        refuse to provide Services to the User if Bitlir&rsquo;s
+                        Services are suspected to be used for the purposes of
+                        conducting illegal activities.
+                      </p>
 
-<p>After confirming the identity of the user, Bitlir may refuse to provide Services to the User if Bitlir&rsquo;s Services are suspected to be used for the purposes of conducting illegal activities.</p>
+                      <p>
+                        Bitlir has a regulatory requirement to verify the
+                        sources of Fiat Money and/or Cryptocurrency to know that
+                        the sources of the Funds that Users use to trade with
+                        are legitimate. Bitlir will require evidence of the
+                        source of Funds; this may include bank statements for
+                        Fiat Money or a video showing wallet transaction details
+                        for Cryptocurrency.
+                      </p>
 
-<p>Bitlir has a regulatory requirement to verify the sources of Fiat Money and/or Cryptocurrency to know that the sources of the Funds that Users use to trade with are legitimate. Bitlir will require evidence of the source of Funds; this may include bank statements for Fiat Money or a video showing wallet transaction details for Cryptocurrency.</p>
+                      <p>
+                        Users who intend to use payment cards for the purpose of
+                        consuming Services must undergo a card check in
+                        accordance with the instructions available on the
+                        Bitlir&rsquo;s Site.
+                      </p>
 
-<p>Users who intend to use payment cards for the purpose of consuming Services must undergo a card check in accordance with the instructions available on the Bitlir&rsquo;s Site.</p>
+                      <p>
+                        Bitlir uses independent third-party companies for the
+                        following:
+                      </p>
 
-<p>Bitlir uses independent third-party companies for the following:</p>
+                      <ul>
+                        <li>
+                          check Users against Politically Exposed Person&rsquo;s
+                          (PEP) and Sanctions Lists as well as checks for
+                          Adverse Media.
+                        </li>
+                        <li>
+                          assess User&rsquo;s cryptocurrency wallets with
+                          regards to AML investigation and compliance.
+                        </li>
+                      </ul>
 
-<ul>
-	<li>check Users against Politically Exposed Person&rsquo;s (PEP) and Sanctions Lists as well as checks for Adverse Media.</li>
-	<li>assess User&rsquo;s cryptocurrency wallets with regards to AML investigation and compliance.</li>
-</ul>
+                      <p>
+                        Bitlir reserves the right to terminate or refuse
+                        Accounts on the basis of information attained by the
+                        third-party companies this includes Users connected to
+                        &ldquo;high-risk&rdquo; wallets.
+                      </p>
 
-<p>Bitlir reserves the right to terminate or refuse Accounts on the basis of information attained by the third-party companies this includes Users connected to &ldquo;high-risk&rdquo; wallets.</p>
+                      <p><strong>Chief Compliance Officer</strong></p>
 
-<p><strong>Chief Compliance Officer</strong></p>
+                      <p>
+                        The Chief Compliance Officer is the person, duly
+                        authorised by Bitlir, whose duty is to ensure the
+                        effective implementation and enforcement of the AML/CFT
+                        and KYC Policy. It is the Chief Compliance
+                        Officer&rsquo;s responsibility to supervise all aspects
+                        of Bitlir&rsquo;s anti-money laundering and
+                        counter-terrorist financing procedures, in particular:
+                      </p>
 
-<p>The Chief Compliance Officer is the person, duly authorised by Bitlir, whose duty is to ensure the effective implementation and enforcement of the AML/CFT and KYC Policy. It is the Chief Compliance Officer&rsquo;s responsibility to supervise all aspects of Bitlir&rsquo;s anti-money laundering and counter-terrorist financing procedures, in particular:</p>
+                      <ul>
+                        <li>
+                          collection of Users&rsquo; identification information;
+                        </li>
+                        <li>
+                          establishing and updating internal policies and
+                          procedures for the completion, review, submission and
+                          retention of all reports and records required under
+                          the applicable laws and regulations;
+                        </li>
+                        <li>
+                          monitoring transactions and investigating any
+                          significant deviations from normal activity;
+                        </li>
+                        <li>
+                          implementing a records management system for
+                          appropriate storage and retrieval of documents, files,
+                          forms and logs, updating risk assessment regularly,
+                          providing law enforcement with information as required
+                          under the applicable laws and regulations.
+                        </li>
+                      </ul>
 
-<ul>
-	<li>collection of Users&rsquo; identification information;</li>
-	<li>establishing and updating internal policies and procedures for the completion, review, submission and retention of all reports and records required under the applicable laws and regulations;</li>
-	<li>monitoring transactions and investigating any significant deviations from normal activity;</li>
-	<li>implementing a records management system for appropriate storage and retrieval of documents, files, forms and logs, updating risk assessment regularly, providing law enforcement with information as required under the applicable laws and regulations.</li>
-</ul>
+                      <p>
+                        The Chief Compliance Officer is the contact point for
+                        Bitlir with law enforcement agencies for the purposes of
+                        prevention of money laundering, terrorist financing and
+                        other illegal activities.
+                      </p>
 
-<p>The Chief Compliance Officer is the contact point for Bitlir with law enforcement agencies for the purposes of prevention of money laundering, terrorist financing and other illegal activities.</p>
+                      <p><strong>Transaction Monitoring</strong></p>
 
-<p><strong>Transaction Monitoring</strong></p>
+                      <p>
+                        Bitlir Users must complete the Bitlir&rsquo;s identity
+                        verification process (who you are) before trading. After
+                        verification is completed the User consents to
+                        transaction Monitoring, Bitlir analyses User&rsquo;s
+                        transactional patterns (what they do).
+                      </p>
 
-<p>Bitlir Users must complete the Bitlir&rsquo;s identity verification process (who you are) before trading. After verification is completed the User consents to transaction Monitoring, Bitlir analyses User&rsquo;s transactional patterns (what they do).</p>
+                      <p>
+                        Bitlir relies on data analysis as a risk-assessment and
+                        suspicious activity detection tools. These tools perform
+                        a variety of compliance-related tasks, including
+                        capturing data, filtering, record-keeping, investigation
+                        management and reporting.
+                      </p>
 
-<p>Bitlir relies on data analysis as a risk-assessment and suspicious activity detection tools. These tools perform a variety of compliance-related tasks, including capturing data, filtering, record-keeping, investigation management and reporting.</p>
+                      <p>In connection with the AML/KYC Policy, Bitlir will:</p>
 
-<p>In connection with the AML/KYC Policy, Bitlir will:</p>
+                      <ul>
+                        <li>
+                          monitor all transactions. Bitlir reserves the right to
+                          ensure that transactions of suspicious nature are
+                          reported to the proper law enforcement;
+                        </li>
+                        <li>
+                          request the User to provide any additional information
+                          and documents in case of suspicious transactions;
+                        </li>
+                        <li>
+                          suspend or terminate User&rsquo;s Account when Bitlir
+                          has a reasonable suspicion that such User is engaged
+                          in illegal activity.
+                        </li>
+                      </ul>
 
-<ul>
-	<li>monitor all transactions. Bitlir reserves the right to ensure that transactions of suspicious nature are reported to the proper law enforcement;</li>
-	<li>request the User to provide any additional information and documents in case of suspicious transactions;</li>
-	<li>suspend or terminate User&rsquo;s Account when Bitlir has a reasonable suspicion that such User is engaged in illegal activity.</li>
-</ul>
+                      <p>
+                        However, the above list is not exhaustive and the Chief
+                        Compliance Officer will monitor Users&rsquo;
+                        transactions on a regular basis in order to define
+                        whether such transactions are to be reported and treated
+                        as suspicious.
+                      </p>
 
-<p>However, the above list is not exhaustive and the Chief Compliance Officer will monitor Users&rsquo; transactions on a regular basis in order to define whether such transactions are to be reported and treated as suspicious.</p>
+                      <p><strong>Risk Assessment</strong></p>
 
-<p><strong>Risk Assessment</strong></p>
+                      <p>
+                        In order to meet its obligations regarding Anti-Money
+                        Laundering (AML) and Counter Terrorist Financing (CTF)
+                        Bitlir completes an annual AML Risk Assessment. The aim
+                        of the AML Risk Assessment is to prevent criminals using
+                        Bitlir to launder money by highlighting risks and
+                        assessing controls Bitlir has put in place. A risk-based
+                        approach is taken to identify Users and monitor how they
+                        use our Services.
+                      </p>
 
-<p>In order to meet its obligations regarding Anti-Money Laundering (AML) and Counter Terrorist Financing (CTF) Bitlir completes an annual AML Risk Assessment. The aim of the AML Risk Assessment is to prevent criminals using Bitlir to launder money by highlighting risks and assessing controls Bitlir has put in place. A risk-based approach is taken to identify Users and monitor how they use our Services.</p>
+                      <p>
+                        The Chief Compliance Officer is responsible for managing
+                        financial crime risks and making improvements in
+                        financial crime risk management through identifying the
+                        general and specific money laundering risks that Bitlir
+                        is facing, determining how these risks are mitigated by
+                        the Bitlir&rsquo;s AML controls and establishing the
+                        residual risk that remains for Bitlir.
+                      </p>
 
-<p>The Chief Compliance Officer is responsible for managing financial crime risks and making improvements in financial crime risk management through identifying the general and specific money laundering risks that Bitlir is facing, determining how these risks are mitigated by the Bitlir&rsquo;s AML controls and establishing the residual risk that remains for Bitlir.</p>
+                      <p><strong>Country of Residence</strong></p>
 
-<p><strong>Country of Residence</strong></p>
+                      <p>
+                        Bitlir&rsquo;s AML and KYC Policy sets out
+                        Bitlir&rsquo;s risk appetite with regard to AML/KYC. To
+                        reduce this risk Bitlir does not accept clients who are
+                        resident in countries deemed to be above the
+                        Bitlir&rsquo;s risk appetite.
+                      </p>
 
-<p>Bitlir&rsquo;s AML and KYC Policy sets out Bitlir&rsquo;s risk appetite with regard to AML/KYC. To reduce this risk Bitlir does not accept clients who are resident in countries deemed to be above the Bitlir&rsquo;s risk appetite.</p>
+                      <p>
+                        The sources used with regards to the categorisation
+                        were:
+                      </p>
 
-<p>The sources used with regards to the categorisation were:</p>
+                      <ul>
+                        <li>Transparency International;</li>
+                        <li>Know Your Country;</li>
+                        <li>FATF High Risk Jurisdictions;</li>
+                        <li>EU High Risk Jurisdictions;</li>
+                        <li>
+                          Countries where Digital Assets are prohibited or there
+                          are restrictions on trading;
+                        </li>
+                        <li>
+                          Countries where Digital Assets are not prohibited;
+                        </li>
+                        <li>Countries subject to UNSC Sanctions Regime.</li>
+                      </ul>
 
-<ul>
-	<li>Transparency International;</li>
-	<li>Know Your Country;</li>
-	<li>FATF High Risk Jurisdictions;</li>
-	<li>EU High Risk Jurisdictions;</li>
-	<li>Countries where Digital Assets are prohibited or there are restrictions on trading;</li>
-	<li>Countries where Digital Assets are not prohibited;</li>
-	<li>Countries subject to UNSC Sanctions Regime.</li>
-</ul>
+                      <p>
+                        It must me clear that Bitlir&rsquo;s policy is
+                        that&nbsp;<strong>all</strong>&nbsp;clients resident in
+                        the below countries are banned and cannot be accepted as
+                        a client. Any clients that try to open an account will
+                        be denied and any funds returned to source.
+                      </p>
 
-<p>It must me clear that Bitlir&rsquo;s policy is that&nbsp;<strong>all</strong>&nbsp;clients resident in the below countries are banned and cannot be accepted as a client. Any clients that try to open an account will be denied and any funds returned to source.</p>
+                      <p><strong>Full list of Banned Jurisdictions</strong></p>
 
-<p><strong>Full list of Banned Jurisdictions</strong></p>
+                      <div class="custom-scroll">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <ul>
+                                  <li>Afghanistan</li>
+                                  <li>Albania</li>
+                                  <li>Angola</li>
+                                  <li>Algeria</li>
+                                  <li>Bangladesh</li>
+                                  <li>Barbados</li>
+                                  <li>Bolivia</li>
+                                  <li>Botswana</li>
+                                  <li>Burma (Myanmar)</li>
+                                  <li>Burundi</li>
+                                  <li>Cambodia</li>
+                                  <li>Central African Republic</li>
+                                  <li>Chad</li>
+                                  <li>Congo</li>
+                                  <li>Guinea &ndash; Conakry</li>
+                                  <li>Cote D&rsquo;ivoire</li>
+                                  <li>Crimea (Ukraine region)</li>
+                                  <li>Cuba</li>
+                                  <li>
+                                    Democratic People&rsquo;s Republic of Korea
+                                    (DPRK)
+                                  </li>
+                                  <li>Ecuador</li>
+                                  <li>Egypt</li>
+                                  <li>Equatorial Guinea</li>
+                                  <li>Eritrea</li>
+                                  <li>Ghana</li>
+                                  <li>Guinea Bissau</li>
+                                  <li>Guyana</li>
+                                  <li>Haiti</li>
+                                  <li>Iran</li>
+                                  <li>Iraq</li>
+                                  <li>Jamaica</li>
+                                </ul>
+                              </td>
+                              <td>
+                                <ul>
+                                  <li>Lao PDR</li>
+                                  <li>Lebanon</li>
+                                  <li>Libya</li>
+                                  <li>Mali</li>
+                                  <li>Morocco</li>
+                                  <li>Myanmar</li>
+                                  <li>Nepal</li>
+                                  <li>Nicaragua</li>
+                                  <li>North Macedonia</li>
+                                  <li>Pakistan</li>
+                                  <li>Panama</li>
+                                  <li>Qatar</li>
+                                  <li>Saudi Arabia</li>
+                                  <li>Somalia</li>
+                                  <li>South Sudan</li>
+                                  <li>Sudan</li>
+                                  <li>Syria</li>
+                                  <li>Tunisia</li>
+                                  <li>Uganda</li>
+                                  <li>Vanuatu</li>
+                                  <li>Venezuela</li>
+                                  <li>Yemen</li>
+                                  <li>Zimbabwe</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
 
-<div class="custom-scroll">
-<table>
-	<tbody>
-		<tr>
-			<td>
-			<ul>
-				<li>Afghanistan</li>
-				<li>Albania</li>
-				<li>Angola</li>
-				<li>Algeria</li>
-				<li>Bangladesh</li>
-				<li>Barbados</li>
-				<li>Bolivia</li>
-				<li>Botswana</li>
-				<li>Burma (Myanmar)</li>
-				<li>Burundi</li>
-				<li>Cambodia</li>
-				<li>Central African Republic</li>
-				<li>Chad</li>
-				<li>Congo</li>
-				<li>Guinea &ndash; Conakry</li>
-				<li>Cote D&rsquo;ivoire</li>
-				<li>Crimea (Ukraine region)</li>
-				<li>Cuba</li>
-				<li>Democratic People&rsquo;s Republic of Korea (DPRK)</li>
-				<li>Ecuador</li>
-				<li>Egypt</li>
-				<li>Equatorial Guinea</li>
-				<li>Eritrea</li>
-				<li>Ghana</li>
-				<li>Guinea Bissau</li>
-				<li>Guyana</li>
-				<li>Haiti</li>
-				<li>Iran</li>
-				<li>Iraq</li>
-				<li>Jamaica</li>
-			</ul>
-			</td>
-			<td>
-			<ul>
-				<li>Lao PDR</li>
-				<li>Lebanon</li>
-				<li>Libya</li>
-				<li>Mali</li>
-				<li>Morocco</li>
-				<li>Myanmar</li>
-				<li>Nepal</li>
-				<li>Nicaragua</li>
-				<li>North Macedonia</li>
-				<li>Pakistan</li>
-				<li>Panama</li>
-				<li>Qatar</li>
-				<li>Saudi Arabia</li>
-				<li>Somalia</li>
-				<li>South Sudan</li>
-				<li>Sudan</li>
-				<li>Syria</li>
-				<li>Tunisia</li>
-				<li>Uganda</li>
-				<li>Vanuatu</li>
-				<li>Venezuela</li>
-				<li>Yemen</li>
-				<li>Zimbabwe</li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-</div>
+                      <p>
+                        Bitlir also does not accept any clients from disputed
+                        territories as they do not produce recognised official
+                        documents, these include:
+                      </p>
 
-<p>Bitlir also does not accept any clients from disputed territories as they do not produce recognised official documents, these include:</p>
-
-<table>
-	<tbody>
-		<tr>
-			<td>
-			<ul>
-				<li>Donetsk People&rsquo;s Republic (DPR)/Luhansk People&rsquo;s Republic (LPR)</li>
-				<li>Pridnestrovian Moldavian Republic</li>
-				<li>Nagorno-Karabakh Republic</li>
-				<li>Republic of Abkhazia</li>
-				<li>Republic of Somaliland</li>
-				<li>Republic of South Ossetia</li>
-				<li>Turkish Republic of Northern Cyprus</li>
-			</ul>
-			</td>
-			<td>
-			<ul>
-				<li>Republic of China (Taiwan)</li>
-				<li>Passports issued by the Russian Federation in Crimea and passports issued to residents of Donetsk and Luhansk regions of Ukraine do not qualify for verification</li>
-				<li>Republic of Kosovo</li>
-				<li>Sahrawi Arab Democratic Republic</li>
-				<li>Republic of Artsakh</li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <ul>
+                                <li>
+                                  Donetsk People&rsquo;s Republic (DPR)/Luhansk
+                                  People&rsquo;s Republic (LPR)
+                                </li>
+                                <li>Pridnestrovian Moldavian Republic</li>
+                                <li>Nagorno-Karabakh Republic</li>
+                                <li>Republic of Abkhazia</li>
+                                <li>Republic of Somaliland</li>
+                                <li>Republic of South Ossetia</li>
+                                <li>Turkish Republic of Northern Cyprus</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>Republic of China (Taiwan)</li>
+                                <li>
+                                  Passports issued by the Russian Federation in
+                                  Crimea and passports issued to residents of
+                                  Donetsk and Luhansk regions of Ukraine do not
+                                  qualify for verification
+                                </li>
+                                <li>Republic of Kosovo</li>
+                                <li>Sahrawi Arab Democratic Republic</li>
+                                <li>Republic of Artsakh</li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="car"> </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="car"></div>
+              </div>
             </div>
+          </div>
         </div>
-</div>
+      </div>
 
- <!-- START FOOTER -->
-		<div class="bottom section-padding">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-						<div class="bottom-logo">
-						
-							<a class="navbar-logo-vn" href="/">
-								<img src="assets/img/logo.png" alt="">
-								 <span style="margin-left: 6px;">bitlir.com</span> 
-							  </a>
-		
-							<p style="width: 230px;">Bitlir is a simple, elegant, and secure platform to build your crypto portfolio.</p>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Features</h4>
-							<ul>
-								<li><a href="/">Home</a></li>
-								<li><a href="trading">Trading</a></li>
-								<li><a href="/profile/wallet">Wallet</a></li>
-								<li><a href="/profile/invest">Invest</a></li>
-								<li><a href="/profile/support">Support</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Market tools</h4>
-							<ul>
-								<li><a href="market-crypto">Crypto market cap</a></li>
-								<li><a href="market-screener">Market screener</a></li>
-								<li><a href="technical-analysis">Technical analysis</a></li>
-								<li><a href="cross-rates">Cross rates</a></li>
-								<li><a href="heat-map">Currency heat map</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Legal</h4>
-							<ul>
-								<li><a href="terms">Terms of service</a></li>
-								<li><a href="privacy-notice">Privacy notice</a></li>
-								<li><a href="cookies-policy">Cookies policy</a></li>
-								<li><a href="aml-kyc-policy">AML & KYC policy</a></li>
-								<li><a href="fees">Fees</a></li>
+      <!-- START FOOTER -->
+      <div class="bottom section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div class="bottom-logo">
+                <a class="navbar-logo-vn" href="/">
+                  <img src="assets/img/logo.png" alt="" />
+                  <span style="margin-left: 6px">bitlir.com</span>
+                </a>
 
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-						<div class="bottom-widget">
-							<h4 class="widget-title">Exchange Pair</h4>
-							<ul>
-								<li><a href="trading?pair=BTC_ETH">BTC to ETH</a></li>
-								<li><a href="trading?pair=BTC_ADA">BTC to ADA</a></li>
-								<li><a href="trading?pair=BTC_ATOM">BTC to ATOM</a></li>
-								<li><a href="trading?pair=ETH_LTC">ETH to LTC</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                <p style="width: 230px">
+                  Bitlir is a simple, elegant, and secure platform to build your
+                  crypto portfolio.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Features</h4>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="trading">Trading</a></li>
+                  <li><a href="/profile/wallet">Wallet</a></li>
+                  <li><a href="/profile/invest">Invest</a></li>
+                  <li><a href="/profile/support">Support</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Market tools</h4>
+                <ul>
+                  <li><a href="market-crypto">Crypto market cap</a></li>
+                  <li><a href="market-screener">Market screener</a></li>
+                  <li><a href="technical-analysis">Technical analysis</a></li>
+                  <li><a href="cross-rates">Cross rates</a></li>
+                  <li><a href="heat-map">Currency heat map</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Legal</h4>
+                <ul>
+                  <li><a href="terms">Terms of service</a></li>
+                  <li><a href="privacy-notice">Privacy notice</a></li>
+                  <li><a href="cookies-policy">Cookies policy</a></li>
+                  <li><a href="aml-kyc-policy">AML & KYC policy</a></li>
+                  <li><a href="fees">Fees</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="bottom-widget">
+                <h4 class="widget-title">Exchange Pair</h4>
+                <ul>
+                  <li><a href="trading?pair=BTC_ETH">BTC to ETH</a></li>
+                  <li><a href="trading?pair=BTC_ADA">BTC to ADA</a></li>
+                  <li><a href="trading?pair=BTC_ATOM">BTC to ATOM</a></li>
+                  <li><a href="trading?pair=ETH_LTC">ETH to LTC</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div>
-						<div class="copyright">
-							<p style="font-size:12px" ;=""><strong>Bitlir</strong> © Copyright 2021 | Worldwide Distributed Digital Asset Exchange | Trading digitals assets such as Bitcoin involves significant risks.</p>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div>
+              <div class="copyright">
+                <p style="font-size: 12px" ;="">
+                  <strong>Bitlir</strong> © Copyright 2021 | Worldwide
+                  Distributed Digital Asset Exchange | Trading digitals assets
+                  such as Bitcoin involves significant risks.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="footer-social"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div
+        id="alert_message_modal"
+        class="popap-container"
+        style="display: none"
+      >
+        <div class="popap-container-item">
+          <div class="popap-container-item-close" id="alert_close_modal"></div>
+          <div class="popap-container-img">
+            <img src="assets/img/warning.svg" alt="" />
+          </div>
+          <div class="popap-container-item-text-box" style="width: 340px">
+            <h3 class="popap-container-item-title">Warning</h3>
+            <p id="userAlertBox" class="popap-container-item-text"></p>
+            <input type="hidden" id="alertMessageId" value="0" />
+            <div class="popap-container-item-btn" id="close_modal_btn">
+              <span
+                id="alert_close_modal_btn"
+                class="popap-container-item-button"
+              >
+                Close
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END FOOTER -->
 
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="footer-social">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      <script
+        data-cfasync="false"
+        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ></script>
+      <script src="assets/js/jquery-3.4.1.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/amcharts-core.min.js"></script>
+      <script src="assets/js/amcharts.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="plugins/notifications/toastr.js"></script>
+      <script src="assets/js/new-select/new-select.js"></script>
+      <script src="assets/js/verifi/verifi.js"></script>
+      <script>
+        var uname1 = document.getElementById("tab-username1");
+        var uname2 = document.getElementById("tab-username2");
+        var email = document.getElementById("email");
 
-	  <div id="alert_message_modal" class="popap-container" style="display: none;">
-	    <div class="popap-container-item">
-	        <div class="popap-container-item-close" id="alert_close_modal">
-	            
-	        </div>
-	        <div class="popap-container-img">
-	            <img src="assets/img/warning.svg" alt="">
-	        </div>
-	        <div class="popap-container-item-text-box" style="width: 340px;">
-	            <h3 class="popap-container-item-title">
-	                Warning
-	            </h3>
-	            <p id="userAlertBox" class="popap-container-item-text">
-	                
-	            </p>
-	            <input type="hidden" id="alertMessageId" value="0">
-	            <div class="popap-container-item-btn" id="close_modal_btn">
-	                <span id="alert_close_modal_btn" class="popap-container-item-button">
-	                    Close
-	                </span>
-	            </div>
-	        </div>
-	    </div>
-	  </div>
-		<!-- END FOOTER -->	
+        uname1.innerHTML = localStorage.getItem("username");
+        uname2.innerHTML = localStorage.getItem("username");
+        email.innerHTML = localStorage.getItem("email");
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/amcharts-core.min.js"></script>
-  <script src="assets/js/amcharts.min.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="plugins/notifications/toastr.js"></script>
-  <script src="assets/js/new-select/new-select.js"></script>
-  <script src="assets/js/verifi/verifi.js"></script>
-  <script>
-  function noti(msg, status) {
-    toastr[status](msg);
-    toastr.options = {
-      "closeButton": false,
-      "debug": false,
-      "newestOnTop": false,
-      "progressBar": false,
-      "rtl": false,
-      "positionClass": "toast-top-right",
-      "preventDuplicates": false,
-      "onclick": null,
-      "showDuration": 300,
-      "hideDuration": 1000,
-      "timeOut": 5000,
-      "extendedTimeOut": 1000,
-      "showEasing": "swing",
-      "hideEasing": "linear",
-      "showMethod": "fadeIn",
-      "hideMethod": "fadeOut"
-    }
-  }
-
-  setInterval(function() {
-  var messageId = $("#alertMessageId").val();
-	  if(messageId == '0') {
-		  $.ajax({
-        url: "ajax/ajax",
-        type: "POST",
-        data: {
-          action: "CHECK_USER_ALERT_MESSAGE"
-        },
-        success: function(response) {
-          if(response != "false") {
-
-            var json = JSON.parse(response);
-            var alert_message_text = json['alert_message_text'];
-            var alert_message_id = json['alert_message_id'];
-
-            
-            $("#alert_message_modal").css("display", "flex");
-            $("#userAlertBox").html(alert_message_text);
-            $("#alertMessageId").val(alert_message_id);
-
-
-          }
-
+        function logout() {
+          localStorage.clear();
+          location.replace("signin.html");
         }
-      })
-	  }
-	}, 5000);
+        function noti(msg, status) {
+          toastr[status](msg);
+          toastr.options = {
+            closeButton: false,
+            debug: false,
+            newestOnTop: false,
+            progressBar: false,
+            rtl: false,
+            positionClass: "toast-top-right",
+            preventDuplicates: false,
+            onclick: null,
+            showDuration: 300,
+            hideDuration: 1000,
+            timeOut: 5000,
+            extendedTimeOut: 1000,
+            showEasing: "swing",
+            hideEasing: "linear",
+            showMethod: "fadeIn",
+            hideMethod: "fadeOut",
+          };
+        }
 
+        setInterval(function () {
+          var messageId = $("#alertMessageId").val();
+          if (messageId == "0") {
+            $.ajax({
+              url: "ajax/ajax",
+              type: "POST",
+              data: {
+                action: "CHECK_USER_ALERT_MESSAGE",
+              },
+              success: function (response) {
+                if (response != "false") {
+                  var json = JSON.parse(response);
+                  var alert_message_text = json["alert_message_text"];
+                  var alert_message_id = json["alert_message_id"];
 
-	$("#alert_close_modal").on("click", function() {
-    $("#alert_message_modal").css("display", "none");
-    var alertMessageId = $("#alertMessageId").val();
+                  $("#alert_message_modal").css("display", "flex");
+                  $("#userAlertBox").html(alert_message_text);
+                  $("#alertMessageId").val(alert_message_id);
+                }
+              },
+            });
+          }
+        }, 5000);
 
-		  $.ajax({
-	      url: "ajax/ajax",
-	      type: "POST",
-	      data: {
-	        action: "VIEWED_ALERT_MESSAGE",
-	        message_id: alertMessageId
-	      },
-	      success: function(response) {
+        $("#alert_close_modal").on("click", function () {
+          $("#alert_message_modal").css("display", "none");
+          var alertMessageId = $("#alertMessageId").val();
 
-	      }
-	    })
-  });
+          $.ajax({
+            url: "ajax/ajax",
+            type: "POST",
+            data: {
+              action: "VIEWED_ALERT_MESSAGE",
+              message_id: alertMessageId,
+            },
+            success: function (response) {},
+          });
+        });
 
-  $("#alert_close_modal_btn").on("click", function() {
-    $("#alert_message_modal").css("display", "none");
-    var alertMessageId = $("#alertMessageId").val();
+        $("#alert_close_modal_btn").on("click", function () {
+          $("#alert_message_modal").css("display", "none");
+          var alertMessageId = $("#alertMessageId").val();
 
-		  $.ajax({
-	      url: "ajax/ajax",
-	      type: "POST",
-	      data: {
-	        action: "VIEWED_ALERT_MESSAGE",
-	        message_id: alertMessageId
-	      },
-	      success: function(response) {
-
-	      }
-	    })
-  });
-
-  
-  </script>
-</div></body>
-
+          $.ajax({
+            url: "ajax/ajax",
+            type: "POST",
+            data: {
+              action: "VIEWED_ALERT_MESSAGE",
+              message_id: alertMessageId,
+            },
+            success: function (response) {},
+          });
+        });
+      </script>
+    </div>
+  </body>
 </html>
