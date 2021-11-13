@@ -342,7 +342,7 @@
             localStorage.setItem("id", response.response._id)
             localStorage.setItem("token", response.token)
               if(localStorage.getItem("redirect")){
-                location.replace(localStorage.getItem("redirect"))
+                location.replace("profile/"+ localStorage.getItem("redirect"))
               }else{
                location.replace("trading.html");
               }

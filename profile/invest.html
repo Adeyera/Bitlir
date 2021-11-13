@@ -797,10 +797,10 @@
 
       function logout() {
         localStorage.clear();
-        location.replace("signin.html");
+        location.replace("../signin.html");
       }
       if(!localStorage.getItem("token")){
-      localStorage.setItem("redirect", "deposit.html")
+      localStorage.setItem("redirect", "invest.html")
       location.replace("../signin.html")
     }
       function noti(msg, status) {

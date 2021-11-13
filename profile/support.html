@@ -185,7 +185,7 @@
   <script src="../plugins/notifications/toastr.js"></script>
   <script>
     if(!localStorage.getItem("token")){
-      localStorage.setItem("redirect", "deposit.html")
+      localStorage.setItem("redirect", "support.html")
       location.replace("../signin.html")
     }
     var uname1 = document.getElementById("tab-username1");
@@ -198,7 +198,7 @@
 
         function logout() {
           localStorage.clear();
-          location.replace("signin.html");
+          location.replace("../signin.html");
         }
       function noti(msg, status) {
         toastr[status](msg);
