@@ -1,0 +1,286 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Support | BITLIR.COM</title>
+   <link rel="icon" href="../assets/img/favicon.ico">
+<link href="../assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../plugins/notifications/toastr.css">
+  <link rel="stylesheet" href="../assets/css/popap-style.css">
+  <link rel="stylesheet" href="../assets/css/stake.css">
+  <link rel="stylesheet" href="../assets/css/popup/popup-verifi.css">
+</head>
+
+<body id="dark" class="stop-scrolling">
+
+<!-- PRELOADER -->
+<!-- PRELOADER END -->
+
+
+ <header class="dark-bb">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-logo-vn" href="/">
+								<img src="../assets/img/logo.png" alt="">
+								 <span style="padding-left: 5px;">Bitlir</span> 
+							  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="icon ion-md-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="headerMenu">
+        <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+            <a class="nav-link" href="../trading.html" role="button">Trading</a>
+          </li>
+          <ul class="navbar-nav mr-auto">
+            
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Market tools
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../market-crypto.html">Crypto market cap</a>
+              <a class="dropdown-item" href="../market-screener.html">Market screener</a>
+              <a class="dropdown-item" href="../technical-analysis.html">Technical analysis</a>
+              <a class="dropdown-item" href="../cross-rates.html">Cross rates</a>
+<a class="dropdown-item" href="heat-map.html">Currency heat map</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../profile/invest.html" role="button">Invest</a>
+          </li>
+          
+<li class="nav-item">
+              <a class="nav-link" href="/profile/support.html" role="button">Support </a>
+            </li>
+<li class="nav-item">
+              <a class="nav-link" href="/profile/wallet.html" role="button">Wallet : 0 USD </a>
+            </li>
+        </ul>
+      </ul>
+        <ul class="navbar-nav ml-auto">
+          
+                   <li class="nav-item dropdown header-img-icon">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="usernameheaderavatar">FredIs &nbsp; &nbsp;</span><img class="rounded-circle" src="/assets/profile/avatar.svg" alt="avatar">
+            </a>
+            <div class="dropdown-menu">
+              <div class="dropdown-header d-flex flex-column align-items-center">
+                <div class="figure mb-3">
+                  <img class="rounded-circle" src="/assets/profile/avatar.svg" alt="">
+                </div>
+                <div class="info text-center">
+                                    <p class="name font-weight-bold mb-0">FredIs</p>
+                  <p class="email text-muted mb-3"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5622393a232137383f3732332f33243716313b373f3a7835393b">[email&#160;protected]</a></p>
+                  
+                </div>
+              </div>
+              <div class="dropdown-body">
+                <ul class="profile-nav">
+                                   <li class="nav-item">
+                    <a href="/profile/wallet.html" class="nav-link">
+                      <i class="icon ion-md-wallet"></i>
+                      <span>My Wallet</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/profile/settings.html" class="nav-link">
+                      <i class="icon ion-md-settings"></i>
+                      <span>Settings</span>
+                    </a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a href="#" class="nav-link red">
+                      <i class="icon ion-md-power"></i>
+                      <span>Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+                </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="chat">
+
+    <div class="container">
+
+        <div class="chat__title">
+            <img class="chat__img" src="/assets/profile/avatar.svg" alt="">
+            <div class="chat__title-name">Live support service</div>
+            <span class="support_online" title="Support Online" style="margin-left: 22px; margin-top: -18px;">0</span>
+        </div>
+
+        <div class="chat__title chat__title-border">
+            <div class="chat__title-name">Chat</div>
+        </div>
+        <div class="chat__container">
+            <div class="chat__content" id="chat_content">
+
+
+                
+            </div>
+            
+        </div>
+
+        <div class="chat__type-message">
+            <div class="chat__message-box">
+              <textarea class="chat__message-input" placeholder="Type a message"></textarea>
+                <div class="chat__message-button">
+                  <a href="#" class="chat__message-button-item"></a>
+                  <form action="../ajax/ajax?action=SEND_SUPPORT_IMAGE" method="POST" enctype="multipart/form-data">
+                  <input style="display: none;" id="support_send_photo" accept="image/x-png,image/jpeg" name="support_send_image" type="file">
+                  <button id="send_image_post" style="display: none;"></button>
+                  </form>
+                </div>
+            </div>
+            <button id="send_support" class="chat__message-send">Send</button>
+        </div>
+    </div> 
+
+
+<style>
+  .support_online {
+    animation: blinker 2s linear infinite;
+    background: #7aff00;
+    border-radius: 50px;
+    padding-left: 2px;
+    padding-right: 4px;
+    font-size: 7px;
+    color: #7aff00;
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 10px;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0.5;
+    }
+  }
+</style>
+
+
+  </section>
+
+
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../assets/js/jquery-3.4.1.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/amcharts-core.min.js"></script>
+  <script src="../assets/js/amcharts.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../plugins/notifications/toastr.js"></script>
+  <script>
+      function noti(msg, status) {
+        toastr[status](msg);
+        toastr.options = {
+          "closeButton": false,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "rtl": false,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": 300,
+          "hideDuration": 1000,
+          "timeOut": 5000,
+          "extendedTimeOut": 1000,
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        }
+      }
+  </script>
+
+    <script>
+      $("#send_support").on("click", function(e) {
+        e.preventDefault();
+
+        var s_text = $(".chat__message-input").val();
+
+        if(s_text == "") {
+            noti("The text field cannot be empty", "error");
+        } else if(s_text.length > 500) {
+            noti("You have exceeded the character limit (500)", "error");
+        } else {
+            $.ajax({
+              url: "../ajax/ajax",
+              type: "POST",
+              data: {
+                action: "SEND_SUPPORT_MESSAGE",
+                support_text: s_text
+              },
+              success: function(response) {
+                if(response == "1") {
+                  noti("Message sent successfully", "success");
+                  $(".chat__message-input").val("");
+                  // load messages
+                  $("#chat_content").load("../ajax/ajax?action=REFRESH_SUPPORT");
+                  // auto scroll top
+                  setTimeout(function() {
+                    var div = $(".chat__container");
+                    div.scrollTop(div.prop('scrollHeight')); 
+                  }, 300);
+                } else if(response == "2") {
+                  noti("You have exceeded the character limit (500)", "error");
+                } else if(response == "3") {
+                  noti("The text field cannot be empty", "error");
+                } else {
+                  noti("An unexpected error has occurred, please try again", "error");
+                }
+
+              }
+            })
+        }
+      });
+
+
+
+      // load messages
+      $("#chat_content").load("../ajax/ajax?action=REFRESH_SUPPORT");
+      // auto scroll top
+      setTimeout(function() {
+        var div = $(".chat__container");
+        div.scrollTop(div.prop('scrollHeight')); 
+      }, 300);
+      // refresh messages
+      setInterval(function() {
+        $("#chat_content").load("../ajax/ajax?action=REFRESH_SUPPORT");
+      }, 5000);
+
+      if(($("#count_support_message").length > 0)) {
+        $("#count_support_message").remove();
+      }
+    </script>
+
+    <script>
+        $(".chat__message-button-item").on("click", function() {
+            $("#support_send_photo").click();
+
+            setInterval(function() {
+
+                var send_photo = $("#support_send_photo").val();
+
+                if(send_photo != "") {
+                    $("#send_image_post").click();
+                }
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

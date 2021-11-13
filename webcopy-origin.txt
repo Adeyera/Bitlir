@@ -1,0 +1,976 @@
+Uri: https://bitlir.com/
+File Name: C:\Downloaded Web Sites\bitlir.com\index.htm
+Content Type: text/html
+
+Uri: https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap
+File Name: C:\Downloaded Web Sites\bitlir.com\css2.css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap
+File Name: C:\Downloaded Web Sites\bitlir.com\css2-1.css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap
+File Name: C:\Downloaded Web Sites\bitlir.com\css2-2.css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap
+File Name: C:\Downloaded Web Sites\bitlir.com\css2-3.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/style.min.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\style.min.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/images/favicon.ico
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://bitlir.com/trading
+File Name: C:\Downloaded Web Sites\bitlir.com\trading.html
+Content Type: text/html
+
+Uri: https://bitlir.com/market-crypto
+File Name: C:\Downloaded Web Sites\bitlir.com\market-crypto.html
+Content Type: text/html
+
+Uri: https://bitlir.com/market-screener
+File Name: C:\Downloaded Web Sites\bitlir.com\market-screener.html
+Content Type: text/html
+
+Uri: https://bitlir.com/technical-analysis
+File Name: C:\Downloaded Web Sites\bitlir.com\technical-analysis.html
+Content Type: text/html
+
+Uri: https://bitlir.com/cross-rates
+File Name: C:\Downloaded Web Sites\bitlir.com\cross-rates.html
+Content Type: text/html
+
+Uri: https://bitlir.com/heat-map
+File Name: C:\Downloaded Web Sites\bitlir.com\heat-map.html
+Content Type: text/html
+
+Uri: https://bitlir.com/profile/invest
+File Name: C:\Downloaded Web Sites\bitlir.com\profile\invest.html
+Content Type: text/html
+
+Uri: https://bitlir.com/profile/wallet
+File Name: C:\Downloaded Web Sites\bitlir.com\profile\wallet.html
+Content Type: text/html
+
+Uri: https://bitlir.com/news.php
+File Name: C:\Downloaded Web Sites\bitlir.com\news.php.html
+Content Type: text/html
+
+Uri: https://bitlir.com/profile/support
+File Name: C:\Downloaded Web Sites\bitlir.com\profile\support.html
+Content Type: text/html
+
+Uri: https://bitlir.com/signin
+File Name: C:\Downloaded Web Sites\bitlir.com\signin.html
+Content Type: text/html
+
+Uri: https://bitlir.com/signup
+File Name: C:\Downloaded Web Sites\bitlir.com\signup.html
+Content Type: text/html
+
+Uri: https://bitlir.com/terms
+File Name: C:\Downloaded Web Sites\bitlir.com\terms.html
+Content Type: text/html
+
+Uri: https://bitlir.com/privacy-notice
+File Name: C:\Downloaded Web Sites\bitlir.com\privacy-notice.html
+Content Type: text/html
+
+Uri: https://bitlir.com/cookies-policy
+File Name: C:\Downloaded Web Sites\bitlir.com\cookies-policy.html
+Content Type: text/html
+
+Uri: https://bitlir.com/aml-kyc-policy
+File Name: C:\Downloaded Web Sites\bitlir.com\aml-kyc-policy.html
+Content Type: text/html
+
+Uri: https://bitlir.com/fees
+File Name: C:\Downloaded Web Sites\bitlir.com\fees.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_ETH
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-1.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_ADA
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-2.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_ATOM
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-3.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_LTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-4.html
+Content Type: text/html
+
+Uri: https://bitlir.com/assets/images/logo.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\logo.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/slider-graphics/btc-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\btc-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/eth-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\eth-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/xrp-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\xrp-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/uni-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\uni-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/ltc-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\ltc-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/link-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\link-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/matic-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\matic-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/xlm-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\xlm-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/ftt-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\ftt-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/slider-graphics/bth-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\slider-graphics\bth-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/statistics-images/btc-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\statistics-images\btc-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/statistics-images/eth-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\statistics-images\eth-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/statistics-images/doge-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\statistics-images\doge-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/statistics-images/xpl-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\statistics-images\xpl-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/statistics-images/ltc-logo.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\statistics-images\ltc-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/benefits-images/integrated-order.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\benefits-images\integrated-order.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/benefits-images/deep-liquidity.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\benefits-images\deep-liquidity.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/benefits-images/customizable.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\benefits-images\customizable.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/benefits-images/zero-fee.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\benefits-images\zero-fee.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/benefits-images/trade-futures.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\benefits-images\trade-futures.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/benefits-images/social.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\benefits-images\social.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/advantage-images/1598367322-home-metrics-coins.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\advantage-images\1598367322-home-metrics-coins.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/advantage-images/1598451413-home-metrics-daily-volume.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\advantage-images\1598451413-home-metrics-daily-volume.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/advantage-images/1598451316-home-metrics-app-downloads.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\advantage-images\1598451316-home-metrics-app-downloads.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/Bitcoin.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\Bitcoin.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/Bloomberg.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\Bloomberg.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/Business-Insider.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\Business-Insider.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/Coindesk.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\Coindesk.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/CryptoDaily.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\CryptoDaily.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/CT.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\CT.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/Finance-Magnates.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\Finance-Magnates.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/Investing.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\Investing.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/SCMP.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\SCMP.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/TET.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\TET.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/company-images/TIA.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\company-images\TIA.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/anywhere-image/1611070929-leadsite-app-bodyminified.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\anywhere-image\1611070929-leadsite-app-bodyminified.png
+Content Type: image/png
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js
+File Name: C:\Downloaded Web Sites\bitlir.com\external-embedding\embed-widget-ticker-tape.js
+Content Type: text/javascript
+
+Uri: https://bitlir.com/assets/js/header.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\header.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/slider-graphics.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\slider-graphics.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/company.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\company.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/benefits.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\benefits.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/jquery.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/nouislider.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\nouislider.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/section-calck.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\section-calck.js
+Content Type: application/javascript
+
+Uri: https://unpkg.com/swiper@7.2.0/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\bitlir.com\swiper@7.2.0\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/fonts/Inter-Regular.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Inter-Regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/Inter-Regular.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Inter-Regular.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/Inter-Regular.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Inter-Regular.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/Inter-Regular.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Inter-Regular.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Bold.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Bold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Bold.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Bold.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Bold.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Bold.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Bold.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Bold.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Extrabold.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Extrabold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Extrabold.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Extrabold.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Extrabold.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Extrabold.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Extrabold.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Extrabold.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Light.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Light.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Light.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Light.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Light.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Light.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Light.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Light.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Medium.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Medium.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Medium.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Medium.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Medium.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Medium.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Medium.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Medium.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Regular.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Regular.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Regular.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Regular.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Regular.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Regular.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Regular.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Semibold.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Semibold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Semibold.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Semibold.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Semibold.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Semibold.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/Gilroy-Semibold.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\Gilroy-Semibold.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/MavenPro-Regular.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\MavenPro-Regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/MavenPro-Regular.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\MavenPro-Regular.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/MavenPro-Regular.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\MavenPro-Regular.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/MavenPro-Regular.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\MavenPro-Regular.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/din-pro-condensed-regular.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\din-pro-condensed-regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/din-pro-condensed-regular.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\din-pro-condensed-regular.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/din-pro-condensed-regular.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\din-pro-condensed-regular.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/din-pro-condensed-regular.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\din-pro-condensed-regular.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/DINPro.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\DINPro.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/DINPro.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\DINPro.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/DINPro.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\DINPro.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/DINPro.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\DINPro.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Regular.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Regular.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Regular.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Regular.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Regular.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Regular.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Regular.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Bold.eot
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Bold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Bold.woff
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Bold.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Bold.ttf
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Bold.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/TTCommons-Bold.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\TTCommons-Bold.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/home-images/home-img.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\home-images\home-img.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/statistics-images/arraw-right.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\statistics-images\arraw-right.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/calc-images/calc-item.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\calc-images\calc-item.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/images/appApple.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\appApple.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/appDroid.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\appDroid.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/images/next.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\images\next.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/img/loader.gif
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\loader.gif
+Content Type: image/gif
+
+Uri: https://bitlir.com/assets/img/favicon.ico
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://bitlir.com/assets/img/favicon-32x32.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/css/style.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\style.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/custom.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\custom.css
+Content Type: text/css
+
+Uri: https://bitlir.com/plugins/notifications/toastr.css
+File Name: C:\Downloaded Web Sites\bitlir.com\plugins\notifications\toastr.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/popap-style.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\popap-style.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/stake.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\stake.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/popup/popup-verifi.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\popup\popup-verifi.css
+Content Type: text/css
+
+Uri: https://bitlir.com/trading?pair=BTC_ALGO
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-5.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_BCH
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-6.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_BTG
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-7.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_CHZ
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-8.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_BNB
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-9.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_LTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-10.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_LINK
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-11.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_DOGE
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-12.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_TRX
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-13.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_WAVES
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-14.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_NEO
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-15.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BTC_XLM
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-16.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_USD
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-17.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_ADA
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-18.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_BCH
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-19.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_EUR
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-20.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_BTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-21.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_XRP
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-22.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=ETH_DOGE
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-23.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BNB_LTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-24.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=BRL_LTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-25.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=GBP_LTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-26.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_BTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-27.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_LTC
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-28.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_ETH
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-29.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_XRP
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-30.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_TRX
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-31.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_EOS
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-32.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_CAD
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-33.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_AUD
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-34.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_EUR
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-35.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_DOT
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-36.html
+Content Type: text/html
+
+Uri: https://bitlir.com/trading?pair=USDT_LINK
+File Name: C:\Downloaded Web Sites\bitlir.com\trading-37.html
+Content Type: text/html
+
+Uri: https://bitlir.com/assets/img/logo.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\logo.png
+Content Type: image/png
+
+Uri: https://s3.tradingview.com/tv.js
+File Name: C:\Downloaded Web Sites\bitlir.com\tv.js
+Content Type: text/javascript
+
+Uri: https://bitlir.com/assets/img/warning.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\warning.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/js/jquery-3.4.1.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\jquery-3.4.1.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/popper.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\popper.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/bootstrap.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/amcharts-core.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\amcharts-core.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/amcharts.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\amcharts.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/jquery.mCustomScrollbar.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\jquery.mCustomScrollbar.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/custom.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\custom.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/plugins/notifications/toastr.js
+File Name: C:\Downloaded Web Sites\bitlir.com\plugins\notifications\toastr.js
+Content Type: application/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-screener.js
+File Name: C:\Downloaded Web Sites\bitlir.com\external-embedding\embed-widget-screener.js
+Content Type: text/javascript
+
+Uri: https://bitlir.com/assets/js/new-select/new-select.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\new-select\new-select.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/assets/js/verifi/verifi.js
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\verifi\verifi.js
+Content Type: application/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js
+File Name: C:\Downloaded Web Sites\bitlir.com\external-embedding\embed-widget-technical-analysis.js
+Content Type: text/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js
+File Name: C:\Downloaded Web Sites\bitlir.com\external-embedding\embed-widget-forex-cross-rates.js
+Content Type: text/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js
+File Name: C:\Downloaded Web Sites\bitlir.com\external-embedding\embed-widget-forex-heat-map.js
+Content Type: text/javascript
+
+Uri: https://s3.tradingview.com/external-embedding/embed-widget-timeline.js
+File Name: C:\Downloaded Web Sites\bitlir.com\external-embedding\embed-widget-timeline.js
+Content Type: text/javascript
+
+Uri: https://bitlir.com/reset-password
+File Name: C:\Downloaded Web Sites\bitlir.com\reset-password.html
+Content Type: text/html
+
+Uri: https://bitlir.com/cdn-cgi/l/email-protection
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\l\email-protection.html
+Content Type: text/html
+
+Uri: https://bitlir.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://bitlir.com/profile/deposit
+File Name: C:\Downloaded Web Sites\bitlir.com\profile\deposit.html
+Content Type: text/html
+
+Uri: https://bitlir.com/profile/withdraw
+File Name: C:\Downloaded Web Sites\bitlir.com\profile\withdraw.html
+Content Type: text/html
+
+Uri: https://unpkg.com/swiper@7.2.0/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\bitlir.com\swiper@7.2.0\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css?family=Overpass:300,400,600,700&display=swap
+File Name: C:\Downloaded Web Sites\bitlir.com\css.css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Poppins:300,400,500,700
+File Name: C:\Downloaded Web Sites\bitlir.com\css-1.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/ionicons.min.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\ionicons.min.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/jquery.mCustomScrollbar.min.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\jquery.mCustomScrollbar.min.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/css/font-awesome.min.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/icons/material-design-iconic-font/css/materialdesignicons.min.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\icons\material-design-iconic-font\css\materialdesignicons.min.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/js/perfect-scrollbar/perfect-scrollbar.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\perfect-scrollbar\perfect-scrollbar.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/js/nice-select/css/nice-select.css
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\js\nice-select\css\nice-select.css
+Content Type: text/css
+
+Uri: https://bitlir.com/assets/img/clip.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\clip.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/img/icon/18.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\icon\18.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/img/icon/1.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\icon\1.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/img/icon/3.png
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\icon\3.png
+Content Type: image/png
+
+Uri: https://bitlir.com/assets/img/stake-img/Icon-btc.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\stake-img\Icon-btc.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/img/stake-img/Icon-ltk.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\stake-img\Icon-ltk.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/img/stake-img/Icon-eth.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\stake-img\Icon-eth.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/img/stake-img/select-array.svg
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\img\stake-img\select-array.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/cdn-cgi/styles/cf.errors.css
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\styles\cf.errors.css
+Content Type: text/css
+
+Uri: https://support.cloudflare.com/hc/en-us/categories/200275218-Getting-Started
+File Name: C:\Downloaded Web Sites\bitlir.com\hc\en-us\categories\200275218-Getting-Started.html
+Content Type: text/html
+
+Uri: https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc
+File Name: C:\Downloaded Web Sites\bitlir.com\en-us\topic\how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc.html
+Content Type: text/html
+
+Uri: https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US
+File Name: C:\Downloaded Web Sites\bitlir.com\en-US\kb\clear-cookies-and-site-data-firefox.html
+Content Type: text/html
+
+Uri: https://support.apple.com/en-ng/guide/safari/sfri11471/mac
+File Name: C:\Downloaded Web Sites\bitlir.com\en-ng\guide\safari\sfri11471\mac.html
+Content Type: text/html
+
+Uri: https://bitlir.com/assets/fonts/ionicons.eot?v=4.5.9-1
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\ionicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/ionicons.woff2?v=4.5.9-1
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\ionicons.woff2
+Content Type: font/woff2
+
+Uri: https://bitlir.com/assets/fonts/ionicons.woff?v=4.5.9-1
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\ionicons.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/ionicons.ttf?v=4.5.9-1
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\ionicons.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/ionicons.svg?v=4.5.9-1
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\ionicons.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/fonts/fontawesome-webfont3e6e.eot?v=4.7.0
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\fontawesome-webfont3e6e.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/fontawesome-webfontd41d.eot?
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\fontawesome-webfontd41d.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\fontawesome-webfont3e6e.woff2
+Content Type: font/woff2
+
+Uri: https://bitlir.com/assets/fonts/fontawesome-webfont3e6e.woff?v=4.7.0
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\fontawesome-webfont3e6e.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/fonts/fontawesome-webfont3e6e.ttf?v=4.7.0
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\fontawesome-webfont3e6e.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/fonts/fontawesome-webfont3e6e.svg?v=4.7.0
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\fonts\fontawesome-webfont3e6e.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/assets/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot?v=2.4.85
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot?
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\icons\material-design-iconic-font\fonts\materialdesignicons-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://bitlir.com/assets/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2?v=2.4.85
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://bitlir.com/assets/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff?v=2.4.85
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff
+Content Type: font/woff
+
+Uri: https://bitlir.com/assets/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf?v=2.4.85
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://bitlir.com/assets/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg?v=2.4.85
+File Name: C:\Downloaded Web Sites\bitlir.com\assets\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://bitlir.com/cdn-cgi/images/icon-exclamation.png?1376755637
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\icon-exclamation.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-icon-horizontal-arrow.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-icon-horizontal-arrow.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/browser-bar.png?1376755637
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\browser-bar.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-no-screenshot-warn.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-no-screenshot-warn.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-no-screenshot-error.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-no-screenshot-error.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-icon-ok.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-icon-ok.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-icon-error.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-icon-error.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-icon-browser.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-icon-browser.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-icon-cloud.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-icon-cloud.png
+Content Type: image/png
+
+Uri: https://bitlir.com/cdn-cgi/images/cf-icon-server.png
+File Name: C:\Downloaded Web Sites\bitlir.com\cdn-cgi\images\cf-icon-server.png
+Content Type: image/png
+
+Uri: https://www.cloudflare.com/5xx-error-landing/
+File Name: C:\Downloaded Web Sites\bitlir.com\5xx-error-landing\index.htm
+Content Type: text/html
+

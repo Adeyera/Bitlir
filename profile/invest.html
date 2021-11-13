@@ -1,0 +1,1303 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Investment | BITLIR.COM</title>
+   <link rel="icon" href="../assets/img/favicon.ico">
+<link href="../assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../plugins/notifications/toastr.css">
+  <link rel="stylesheet" href="../assets/css/popap-style.css">
+  <link rel="stylesheet" href="../assets/css/stake.css">
+  <link rel="stylesheet" href="../assets/css/popup/popup-verifi.css">
+</head>
+
+<body id="dark" class="stop-scrolling">
+
+<!-- PRELOADER -->
+<!-- PRELOADER END -->
+
+
+ <header class="dark-bb">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-logo-vn" href="/">
+								<img src="../assets/img/logo.png" alt="">
+								 <span style="padding-left: 5px;">Bitlir</span> 
+							  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="icon ion-md-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="headerMenu">
+        <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+            <a class="nav-link" href="../trading.html" role="button">Trading</a>
+          </li>
+          <ul class="navbar-nav mr-auto">
+            
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Market tools
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../market-crypto.html">Crypto market cap</a>
+              <a class="dropdown-item" href="../market-screener.html">Market screener</a>
+              <a class="dropdown-item" href="../technical-analysis.html">Technical analysis</a>
+              <a class="dropdown-item" href="../cross-rates.html">Cross rates</a>
+<a class="dropdown-item" href="heat-map.html">Currency heat map</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../profile/invest.html" role="button">Invest</a>
+          </li>
+          
+<li class="nav-item">
+              <a class="nav-link" href="../profile/support.html" role="button">Support </a>
+            </li>
+<li class="nav-item">
+              <a class="nav-link" href="../profile/wallet.html" role="button">Wallet : 0 USD </a>
+            </li>
+        </ul>
+      </ul>
+        <ul class="navbar-nav ml-auto">
+          
+                   <li class="nav-item dropdown header-img-icon">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="usernameheaderavatar">FredIs &nbsp; &nbsp;</span><img class="rounded-circle" src="/assets/profile/avatar.svg" alt="avatar">
+            </a>
+            <div class="dropdown-menu">
+              <div class="dropdown-header d-flex flex-column align-items-center">
+                <div class="figure mb-3">
+                  <img class="rounded-circle" src="/assets/profile/avatar.svg" alt="">
+                </div>
+                <div class="info text-center">
+                                    <p class="name font-weight-bold mb-0">FredIs</p>
+                  <p class="email text-muted mb-3"><a href="/cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="53273c3f2624323d3a3237362a36213213343e323a3f7d303c3e">[email&#160;protected]</a></p>
+                  
+                </div>
+              </div>
+              <div class="dropdown-body">
+                <ul class="profile-nav">
+                                   <li class="nav-item">
+                    <a href="/profile/wallet.html" class="nav-link">
+                      <i class="icon ion-md-wallet"></i>
+                      <span>My Wallet</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/profile/settings.html" class="nav-link">
+                      <i class="icon ion-md-settings"></i>
+                      <span>Settings</span>
+                    </a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a href="../logout" class="nav-link red">
+                      <i class="icon ion-md-power"></i>
+                      <span>Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+                </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="b1">
+    <div class="page-title dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="page-title-content">
+              <p>Welcome Back,
+                <span> 
+                  
+                </span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="container">
+        <div class="row">
+
+          <!-- Profile menu -->
+            
+				<div class="col-xl-12">
+					<div class="card sub-menu">
+						<div class="card-body">
+							<ul class="d-flex">
+                                    <li class="nav-item">
+                                        <a href="wallet.html" class="nav-link ">
+                                            <i class="mdi mdi-bullseye"></i>
+                                            <span>Overview</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="deposit.html" class="nav-link ">
+                                            <i class="mdi mdi-database"></i>
+                                            <span>Deposit</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="withdraw.html" class="nav-link ">
+                                            <i class="mdi mdi-transfer"></i>
+                                            <span>Withdraw</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="invest.html" class="nav-link active">
+                                            <i class="mdi mdi-cash-usd"></i>
+                                            <span>Invest</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="../../../Downloaded Web Site/bitlir.com/profile/affiliate.html" class="nav-link ">
+                                            <i class="mdi mdi-diamond"></i>
+                                            <span>Affiliate</span>
+                                        </a>
+                                    </li>
+
+                                    
+
+                                    <li class="nav-item">
+                                        <a href="../../../Downloaded Web Site/bitlir.com/profile/settings.html" class="nav-link ">
+                                            <i class="mdi mdi-settings"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+						</div>
+					</div>
+				</div>          <!-- Profile menu end -->
+
+          <div class="stake">
+            <div class="container">
+              <div class="stake__items">
+                                <div class="stake__item">
+                  <div class="stake__time-bg">
+                    <div class="stake__time-bg-two"></div>
+                  </div>
+                  <div class="stake__time">
+                    
+                    <div class="stale__time-info">
+                      1 week
+                      <span style="display: block;">Staking</span>
+                    </div>
+                    <div class="stake__time-bonus">
+                      1.3% per Day
+                      <br>+ Bonus 1%
+                    </div>
+                  </div>
+                  <span id="stake_block_1" style="">
+                  <div class="stake__select">
+                    <div class="stake__select-name">
+                      Select coin
+                    </div>
+
+
+                    <div class="select selectColOne">
+                      <span id="select__span-one" class="select__span">BTC - 0</span>
+                      <ul id="select__list-one" class="select__list">
+                        <li class="select__item btc" onclick="select_1('btc')">BTC - 0</li>
+                        <li class="select__item ltc" onclick="select_1('ltc')">LTC - 0</li>
+                        <li class="select__item eth" onclick="select_1('eth')">ETH - 0</li>
+                      </ul>
+                    </div>
+
+
+
+
+
+                  </div>
+                  <div class="stake__sum">
+                    <div class="stake__sum-name">
+                      Enter an amount to invest
+                    </div>
+                    <div class="stake__sum-numbers">
+                      <div class="stake__sum-container">
+                        <input type="number" value="0.0000" id="input_amount_1">
+                        <span id="amount_crypto_1">BTC</span>
+                      </div>
+                      <button onclick="max_1()">MAX</button>
+                    </div>
+                  </div>
+                </span>
+                  <div class="stake__benefit">
+
+                                        <div class="stake__benefit-your">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Your profit:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          + <span id="profit_amount_1">0.0000</span> <span id="profit_crypto_1">BTC</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="profit_usd_1">0.00</span>$
+                      </div>
+                    </div>
+                    <div class="stake__benefit-total">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Total:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          <span id="total_amount_1">0.0000</span> <span id="total_crypto_1">BTC</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="total_usd_1">0.00</span>$
+                      </div>
+                    </div>
+                                        
+                  </div>
+
+                  <div class="stake__item-button">
+                    <button id="stake_btn_1" style="">+ STAKE</button>
+                  </div>
+                </div>
+                
+                <div class="stake__item">
+                  <div class="stake__time-bg stake__time-bg-hhh">
+                    <div class="stake__time-bg-two stake__time-bg-hhh-col"></div>
+                  </div>
+                  <div class="stake__time">
+
+                    <div class="stale__time-info">
+                      2 week
+                      <span style="display: block;">Staking</span>
+                    </div>
+                    <div class="stake__time-bonus">
+                      1.6% per Day
+                      <br>+ Bonus 2.5%
+                    </div>
+                  </div>
+                  <span id="stake_block_2" style="">
+                  <div class="stake__select">
+                    <div class="stake__select-name">
+                      Select coin
+                    </div>
+
+
+                    <div class="select selectColTwo">
+                      <span id="select__span-two" class="select__span">LTC - 0</span>
+                      <ul id="select__list-two" class="select__list">
+                        <li class="select__item btc" onclick="select_2('btc')">BTC - 0</li>
+                        <li class="select__item ltc" onclick="select_2('ltc')">LTC - 0</li>
+                        <li class="select__item eth" onclick="select_2('eth')">ETH - 0</li>
+                      </ul>
+                    </div>
+
+
+
+
+
+                  </div>
+                  <div class="stake__sum">
+                    <div class="stake__sum-name">
+                      Enter an amount to invest
+                    </div>
+                    <div class="stake__sum-numbers">
+                      <div class="stake__sum-container">
+                        <input type="number" value="0.0000" id="input_amount_2">
+                        <span id="amount_crypto_2">LTC</span>
+                      </div>
+                      <button onclick="max_2()">MAX</button>
+                    </div>
+                  </div>
+                </span>
+                                  <div class="stake__benefit">
+                    <div class="stake__benefit-your">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Your profit:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          + <span id="profit_amount_2">0.0000</span> <span id="profit_crypto_2">LTC</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="profit_usd_2">0.00</span>$
+                      </div>
+                    </div>
+                    <div class="stake__benefit-total">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Total:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          <span id="total_amount_2">0.0000</span> <span id="total_crypto_2">LTC</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="total_usd_2">0.00</span>$
+                      </div>
+                    </div>
+                  </div>
+                                  <div class="stake__item-button">
+                    <button id="stake_btn_2" style="">+ STAKE</button>
+                  </div>
+                </div>
+
+                
+                <div class="stake__item">
+                  <div class="stake__time-bg stake__time-bg-hhhh">
+                    <div class="stake__time-bg-two stake__time-bg-hhhh-col"></div>
+                  </div>
+                  <div class="stake__time">
+                    
+                    <div class="stale__time-info">
+                      1 month
+                      <span style="display: block;">Staking</span>
+                    </div>
+                    <div class="stake__time-bonus">
+                      2.1% per Day
+                      <br>+ Bonus 7%
+                    </div>
+                  </div>
+                  <span id="stake_block_3" style="">
+                  <div class="stake__select">
+                    <div class="stake__select-name">
+                      Select coin
+                    </div>
+
+
+                    <div class="select selectColThree">
+                      <span id="select__span-Three" class="select__span">ETH - 0</span>
+                      <ul id="select__list-Three" class="select__list">
+                        <li class="select__item btc" onclick="select_3('btc')">BTC - 0</li>
+                        <li class="select__item ltc" onclick="select_3('ltc')">LTC - 0</li>
+                        <li class="select__item eth" onclick="select_3('eth')">ETH - 0</li>
+                      </ul>
+                    </div>
+
+
+
+
+
+                  </div>
+                
+                  <div class="stake__sum">
+                    <div class="stake__sum-name">
+                      Enter an amount to invest
+                    </div>
+                    <div class="stake__sum-numbers">
+                      <div class="stake__sum-container">
+                        <input type="number" value="0.0000" id="input_amount_3">
+                        <span id="amount_crypto_3">ETH</span>
+                      </div>
+                      <button onclick="max_3()">MAX</button>
+                    </div>
+                  </div>
+                  </span>
+                                    <div class="stake__benefit">
+                    <div class="stake__benefit-your">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Your profit:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          + <span id="profit_amount_3">0.0000</span> <span id="profit_crypto_3">ETH</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="profit_usd_3">0.00</span>$
+                      </div>
+                    </div>
+                    <div class="stake__benefit-total">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Total:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          <span id="total_amount_3">0.0000</span> <span id="total_crypto_3">ETH</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="total_usd_3">0.00</span>$
+                      </div>
+                    </div>
+                  </div>
+                                  <div class="stake__item-button">
+                    <button id="stake_btn_3" style="">+ STAKE</button>
+                  </div>
+                </div>
+
+                 
+                <div class="stake__item">
+                  <div class="stake__time-bg stake__time-bg-col-four">
+                    <div class="stake__time-bg-two stake__time-bg-col"></div>
+                  </div>
+                  <div class="stake__time">
+
+                    <div class="stale__time-info">
+                      3 month
+                      <span style="display: block;">Staking</span>
+                    </div>
+                    <div class="stake__time-bonus">
+                      2.6% per Day
+                      <br>+ Bonus 16%
+                    </div>
+                  </div>
+                  <span id="stake_block_4" style="">
+                  <div class="stake__select">
+                    <div class="stake__select-name">
+                      Select coin
+                    </div>
+
+
+                    <div class="select selectColFour">
+                      <span id="select__span-Four" class="select__span">BTC - 0</span>
+                      <ul id="select__list-Four" class="select__list">
+                        <li class="select__item btc" onclick="select_4('btc')">BTC - 0</li>
+                        <li class="select__item ltc" onclick="select_4('ltc')">LTC - 0</li>
+                        <li class="select__item eth" onclick="select_4('eth')">ETH - 0</li>
+                      </ul>
+                    </div>
+
+
+
+
+
+                  </div>
+                  <div class="stake__sum">
+                    <div class="stake__sum-name">
+                      Enter an amount to invest
+                    </div>
+                    <div class="stake__sum-numbers">
+                      <div class="stake__sum-container">
+                        <input type="number" value="0.0000" id="input_amount_4">
+                        <span id="amount_crypto_4">BTC</span>
+                      </div>
+                      <button onclick="max_4()">MAX</button>
+                    </div>
+                  </div>
+                </span>
+                                  <div class="stake__benefit">
+                    <div class="stake__benefit-your">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Your profit:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          + <span id="profit_amount_4">0.0000</span> <span id="profit_crypto_4">BTC</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="profit_usd_4">0.00</span>$
+                      </div>
+                    </div>
+                    <div class="stake__benefit-total">
+                      <div class="stake__benefit-profit">
+                        <div class="stake__benefit-who">
+                          Total:
+                        </div>
+                        <div class="stake__benefit-numbers">
+                          <span id="total_amount_4">0.0000</span> <span id="total_crypto_4">BTC</span>
+                        </div>
+                      </div>
+                      <div class="stake__benefit-translate">
+                        ≈ <span id="total_usd_4">0.00</span>$
+                      </div>
+                    </div>
+                  </div>
+                                  <div class="stake__item-button">
+                    <button id="stake_btn_4" style="">+ STAKE</button>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-xl-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Important Information</h4>
+              </div>
+              <div class="card-body">
+                <div class="important-info">
+                  <ul>
+                    <li>
+                      <i class="mdi mdi-checkbox-blank-circle"></i>
+                      You can stake any investment plan available to you. After depositing coins into any of the plans, the profit will be automatically transferred to your balance after the expiration of the selected plan.
+                    </li>
+                    <li>
+                      <i class="mdi mdi-checkbox-blank-circle"></i>
+                      The profit is calculated in real time, for this you need to refresh the page.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="hidden" value="0" id="btc_balance">
+  <input type="hidden" value="0" id="eth_balance">
+  <input type="hidden" value="0" id="ltc_balance">
+
+
+  <input type="hidden" value="63652" id="btc_course">
+  <input type="hidden" value="4599" id="eth_course">
+  <input type="hidden" value="261" id="ltc_course">
+
+ <!-- START FOOTER -->
+		<div class="bottom section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="bottom-logo">
+						
+							<a class="navbar-logo-vn" href="/">
+								<img src="../assets/img/logo.png" alt="">
+								 <span style="margin-left: 6px;">bitlir.com</span> 
+							  </a>
+		
+							<p style="width: 230px;">Bitlir is a simple, elegant, and secure platform to build your crypto portfolio.</p>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+						<div class="bottom-widget">
+							<h4 class="widget-title">Features</h4>
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="trading">Trading</a></li>
+								<li><a href="/profile/wallet">Wallet</a></li>
+								<li><a href="/profile/invest">Invest</a></li>
+								<li><a href="/profile/support">Support</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+						<div class="bottom-widget">
+							<h4 class="widget-title">Market tools</h4>
+							<ul>
+								<li><a href="market-crypto">Crypto market cap</a></li>
+								<li><a href="market-screener">Market screener</a></li>
+								<li><a href="technical-analysis">Technical analysis</a></li>
+								<li><a href="cross-rates">Cross rates</a></li>
+								<li><a href="heat-map">Currency heat map</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+						<div class="bottom-widget">
+							<h4 class="widget-title">Legal</h4>
+							<ul>
+								<li><a href="../terms">Terms of service</a></li>
+								<li><a href="../privacy-notice">Privacy notice</a></li>
+								<li><a href="../cookies-policy">Cookies policy</a></li>
+								<li><a href="../aml-kyc-policy">AML & KYC policy</a></li>
+								<li><a href="../fees">Fees</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+						<div class="bottom-widget">
+							<h4 class="widget-title">Exchange Pair</h4>
+							<ul>
+								<li><a href="../trading?pair=BTC_ETH">BTC to ETH</a></li>
+								<li><a href="../trading?pair=BTC_ADA">BTC to ADA</a></li>
+								<li><a href="../trading?pair=BTC_ATOM">BTC to ATOM</a></li>
+								<li><a href="../trading?pair=ETH_LTC">ETH to LTC</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div>
+						<div class="copyright">
+							<p style="font-size:12px" ;=""><strong>Bitlir</strong> © Copyright 2021 | Worldwide Distributed Digital Asset Exchange | Trading digitals assets such as Bitcoin involves significant risks.</p>
+
+
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="footer-social">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	  <div id="alert_message_modal" class="popap-container" style="display: none;">
+	    <div class="popap-container-item">
+	        <div class="popap-container-item-close" id="alert_close_modal">
+	            
+	        </div>
+	        <div class="popap-container-img">
+	            <img src="../assets/img/warning.svg" alt="">
+	        </div>
+	        <div class="popap-container-item-text-box" style="width: 340px;">
+	            <h3 class="popap-container-item-title">
+	                Warning
+	            </h3>
+	            <p id="userAlertBox" class="popap-container-item-text">
+	                
+	            </p>
+	            <input type="hidden" id="alertMessageId" value="0">
+	            <div class="popap-container-item-btn" id="close_modal_btn">
+	                <span id="alert_close_modal_btn" class="popap-container-item-button">
+	                    Close
+	                </span>
+	            </div>
+	        </div>
+	    </div>
+	  </div>
+		<!-- END FOOTER -->	
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../assets/js/jquery-3.4.1.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/amcharts-core.min.js"></script>
+  <script src="../assets/js/amcharts.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../plugins/notifications/toastr.js"></script>
+  <script src="../assets/js/new-select/new-select.js"></script>
+  <script src="../assets/js/verifi/verifi.js"></script>
+  <script>
+  function noti(msg, status) {
+    toastr[status](msg);
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "rtl": false,
+      "positionClass": "toast-top-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": 300,
+      "hideDuration": 1000,
+      "timeOut": 5000,
+      "extendedTimeOut": 1000,
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+  }
+
+  setInterval(function() {
+  var messageId = $("#alertMessageId").val();
+	  if(messageId == '0') {
+		  $.ajax({
+        url: "../ajax/ajax",
+        type: "POST",
+        data: {
+          action: "CHECK_USER_ALERT_MESSAGE"
+        },
+        success: function(response) {
+          if(response != "false") {
+
+            var json = JSON.parse(response);
+            var alert_message_text = json['alert_message_text'];
+            var alert_message_id = json['alert_message_id'];
+
+            
+            $("#alert_message_modal").css("display", "flex");
+            $("#userAlertBox").html(alert_message_text);
+            $("#alertMessageId").val(alert_message_id);
+
+
+          }
+
+        }
+      })
+	  }
+	}, 5000);
+
+
+	$("#alert_close_modal").on("click", function() {
+    $("#alert_message_modal").css("display", "none");
+    var alertMessageId = $("#alertMessageId").val();
+
+		  $.ajax({
+	      url: "../ajax/ajax",
+	      type: "POST",
+	      data: {
+	        action: "VIEWED_ALERT_MESSAGE",
+	        message_id: alertMessageId
+	      },
+	      success: function(response) {
+
+	      }
+	    })
+  });
+
+  $("#alert_close_modal_btn").on("click", function() {
+    $("#alert_message_modal").css("display", "none");
+    var alertMessageId = $("#alertMessageId").val();
+
+		  $.ajax({
+	      url: "../ajax/ajax",
+	      type: "POST",
+	      data: {
+	        action: "VIEWED_ALERT_MESSAGE",
+	        message_id: alertMessageId
+	      },
+	      success: function(response) {
+
+	      }
+	    })
+  });
+
+  
+  </script>
+</body>
+
+</html>
+<script>
+  var default_1 = 'btc';
+  var default_2 = 'ltc';
+  var default_3 = 'eth';
+  var default_4 = 'btc';
+
+  function select_1(crypto) {
+    default_1 = crypto;
+    
+    var str_crypto = crypto.toUpperCase(); 
+    $("#amount_crypto_1").html(str_crypto);
+    $("#profit_crypto_1").html(str_crypto);
+    $("#total_crypto_1").html(str_crypto);
+
+    $("#input_amount_1").val('0.0000');
+    $("#profit_amount_1").html('0.0000');
+    $("#profit_usd_1").html('0.00');
+    $("#total_amount_1").html('0.0000');
+    $("#total_usd_1").html('0.00');
+  }
+
+  function select_2(crypto) {
+    default_2 = crypto;
+    
+    var str_crypto = crypto.toUpperCase(); 
+    $("#amount_crypto_2").html(str_crypto);
+    $("#profit_crypto_2").html(str_crypto);
+    $("#total_crypto_2").html(str_crypto);
+
+    $("#input_amount_2").val('0.0000');
+    $("#profit_amount_2").html('0.0000');
+    $("#profit_usd_2").html('0.00');
+    $("#total_amount_2").html('0.0000');
+    $("#total_usd_2").html('0.00');
+  }
+
+  function select_3(crypto) {
+    default_3 = crypto;
+    
+    var str_crypto = crypto.toUpperCase(); 
+    $("#amount_crypto_3").html(str_crypto);
+    $("#profit_crypto_3").html(str_crypto);
+    $("#total_crypto_3").html(str_crypto);
+
+    $("#input_amount_3").val('0.0000');
+    $("#profit_amount_3").html('0.0000');
+    $("#profit_usd_3").html('0.00');
+    $("#total_amount_3").html('0.0000');
+    $("#total_usd_3").html('0.00');
+  }
+
+  function select_4(crypto) {
+    default_4 = crypto;
+    
+    var str_crypto = crypto.toUpperCase(); 
+    $("#amount_crypto_4").html(str_crypto);
+    $("#profit_crypto_4").html(str_crypto);
+    $("#total_crypto_4").html(str_crypto);
+
+    $("#input_amount_4").val('0.0000');
+    $("#profit_amount_4").html('0.0000');
+    $("#profit_usd_4").html('0.00');
+    $("#total_amount_4").html('0.0000');
+    $("#total_usd_4").html('0.00');
+  }
+
+  function max_1() {
+    var my_balance = $("#" + default_1 + "_balance").val();
+    var profit_amount = parseFloat(my_balance) / 100 * 10.1;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_1 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(my_balance) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_1 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+    $("#input_amount_1").val(my_balance);
+    $("#profit_amount_1").html(profit_amount);
+    $("#profit_usd_1").html(profit_amount_usd);
+    $("#total_amount_1").html(total_amount);
+    $("#total_usd_1").html(total_amount_usd);
+
+
+  }
+
+  function max_2() {
+    var my_balance = $("#" + default_2 + "_balance").val();
+    var profit_amount = parseFloat(my_balance) / 100 * 24.9;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_2 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(my_balance) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_2 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+    $("#input_amount_2").val(my_balance);
+    $("#profit_amount_2").html(profit_amount);
+    $("#profit_usd_2").html(profit_amount_usd);
+    $("#total_amount_2").html(total_amount);
+    $("#total_usd_2").html(total_amount_usd);
+
+
+  }
+
+  function max_3() {
+    var my_balance = $("#" + default_3 + "_balance").val();
+    var profit_amount = parseFloat(my_balance) / 100 * 70;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_3 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(my_balance) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_3 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+    $("#input_amount_3").val(my_balance);
+    $("#profit_amount_3").html(profit_amount);
+    $("#profit_usd_3").html(profit_amount_usd);
+    $("#total_amount_3").html(total_amount);
+    $("#total_usd_3").html(total_amount_usd);
+
+
+  }
+
+  function max_4() {
+    var my_balance = $("#" + default_4 + "_balance").val();
+    var profit_amount = parseFloat(my_balance) / 100 * 250;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_4 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(my_balance) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_4 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+    $("#input_amount_4").val(my_balance);
+    $("#profit_amount_4").html(profit_amount);
+    $("#profit_usd_4").html(profit_amount_usd);
+    $("#total_amount_4").html(total_amount);
+    $("#total_usd_4").html(total_amount_usd);
+
+
+  }
+
+
+  $('#input_amount_1').keyup(function(e){
+
+    var my_balance = $("#" + default_1 + "_balance").val();
+
+    var input_amount = $("#input_amount_1").val();
+
+    if($("#input_amount_1").val() == '') {
+      input_amount = 0;
+    }
+
+
+    var profit_amount = parseFloat(input_amount) / 100 * 10.1;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_1 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(input_amount) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_1 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+
+
+    if(parseFloat(my_balance) < parseFloat(input_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+      $("#profit_amount_1").html('0.0000');
+      $("#profit_usd_1").html('0.00');
+      $("#total_amount_1").html('0.0000');
+      $("#total_usd_1").html('0.00');
+    } else {
+      $("#profit_amount_1").html(profit_amount);
+      $("#profit_usd_1").html(profit_amount_usd);
+      $("#total_amount_1").html(total_amount);
+      $("#total_usd_1").html(total_amount_usd);
+    }
+
+    
+
+  });
+
+  $('#input_amount_2').keyup(function(e){
+
+    var my_balance = $("#" + default_2 + "_balance").val();
+
+    var input_amount = $("#input_amount_2").val();
+
+    if($("#input_amount_2").val() == '') {
+      input_amount = 0;
+    }
+
+
+    var profit_amount = parseFloat(input_amount) / 100 * 24.9;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_2 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(input_amount) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_2 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+
+
+    if(parseFloat(my_balance) < parseFloat(input_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+      $("#profit_amount_2").html('0.0000');
+      $("#profit_usd_2").html('0.00');
+      $("#total_amount_2").html('0.0000');
+      $("#total_usd_2").html('0.00');
+    } else {
+      $("#profit_amount_2").html(profit_amount);
+      $("#profit_usd_2").html(profit_amount_usd);
+      $("#total_amount_2").html(total_amount);
+      $("#total_usd_2").html(total_amount_usd);
+    }
+
+    
+
+  });
+
+  $('#input_amount_3').keyup(function(e){
+
+    var my_balance = $("#" + default_3 + "_balance").val();
+
+    var input_amount = $("#input_amount_3").val();
+
+    if($("#input_amount_3").val() == '') {
+      input_amount = 0;
+    }
+
+
+    var profit_amount = parseFloat(input_amount) / 100 * 70;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_3 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(input_amount) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_3 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+
+
+    if(parseFloat(my_balance) < parseFloat(input_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+      $("#profit_amount_3").html('0.0000');
+      $("#profit_usd_3").html('0.00');
+      $("#total_amount_3").html('0.0000');
+      $("#total_usd_3").html('0.00');
+    } else {
+      $("#profit_amount_3").html(profit_amount);
+      $("#profit_usd_3").html(profit_amount_usd);
+      $("#total_amount_3").html(total_amount);
+      $("#total_usd_3").html(total_amount_usd);
+    }
+
+    
+
+  });
+
+  $('#input_amount_4').keyup(function(e){
+
+    var my_balance = $("#" + default_4 + "_balance").val();
+
+    var input_amount = $("#input_amount_4").val();
+
+    if($("#input_amount_4").val() == '') {
+      input_amount = 0;
+    }
+
+
+    var profit_amount = parseFloat(input_amount) / 100 * 250;
+        profit_amount = parseFloat(profit_amount).toFixed(6);
+    var profit_amount_usd = parseFloat($("#" + default_4 + "_course").val()) * profit_amount;
+        profit_amount_usd = profit_amount_usd.toFixed(2);
+
+    var total_amount = parseFloat(input_amount) + parseFloat(profit_amount);
+        total_amount = parseFloat(total_amount).toFixed(6);
+    var total_amount_usd = parseFloat($("#" + default_4 + "_course").val()) * total_amount;
+        total_amount_usd = total_amount_usd.toFixed(2);
+
+
+
+    if(parseFloat(my_balance) < parseFloat(input_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+      $("#profit_amount_4").html('0.0000');
+      $("#profit_usd_4").html('0.00');
+      $("#total_amount_4").html('0.0000');
+      $("#total_usd_4").html('0.00');
+    } else {
+      $("#profit_amount_4").html(profit_amount);
+      $("#profit_usd_4").html(profit_amount_usd);
+      $("#total_amount_4").html(total_amount);
+      $("#total_usd_4").html(total_amount_usd);
+    }
+
+    
+
+  });
+
+
+  $("#stake_btn_1").on("click", function() {
+    var select_coin = default_1;
+    var invest_amount = $("#input_amount_1").val();
+    var my_balance = $("#" + select_coin + "_balance").val();
+
+    if(parseFloat(my_balance) < parseFloat(invest_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+    } else if(invest_amount == '' || parseFloat(invest_amount) == 0) {
+      noti("Please, enter invest amount", "info");
+    } else {
+      var profit_amount = parseFloat(invest_amount) / 100 * 10.1;
+          profit_amount = parseFloat(profit_amount).toFixed(6);
+      var total_amount = parseFloat(invest_amount) + parseFloat(profit_amount);
+          total_amount = parseFloat(total_amount).toFixed(6);
+
+      $.ajax({
+          url: "../ajax/ajax",
+          type: "POST",
+          data: {
+            action: "CREATE_INVEST_PLAN",
+            invest_plan: "1",
+            invest_coin: select_coin,
+            invest_amount: invest_amount,
+            invest_profit: profit_amount,
+            invest_total: total_amount
+          },
+          success: function(response) {
+            console.log(response);
+            if(response == '1') {
+                noti("Invest plan successfully created", "success");
+                $("#stake_btn_1").css("pointer-events", "none");
+                $("#stake_btn_1").css("opacity", "0.2");
+                $("#stake_block_1").css("opacity", "0.2");
+                $("#stake_block_1").css("pointer-events", "none");
+                $("#stake_block_1").css("display", "block");
+                $("#stake_btn_1").html("Invested");
+
+                var new_balance = parseFloat(my_balance) - parseFloat(invest_amount);
+                $("#" + select_coin + "_balance").val(new_balance);
+            } else if(response == '2') {
+                noti("Not enough balance.", "error");
+            } else if(response == '4') {
+                noti("An unknown error has occurred, please try again later", "error");
+            } else {
+                noti("An unknown error has occurred, please try again later", "error");
+            }
+
+          }
+        })
+    }
+  });
+
+  $("#stake_btn_2").on("click", function() {
+    var select_coin = default_2;
+    var invest_amount = $("#input_amount_2").val();
+    var my_balance = $("#" + select_coin + "_balance").val();
+
+    if(parseFloat(my_balance) < parseFloat(invest_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+    } else if(invest_amount == '' || parseFloat(invest_amount) == 0) {
+      noti("Please, enter invest amount", "info");
+    } else {
+      var profit_amount = parseFloat(invest_amount) / 100 * 24.9;
+          profit_amount = parseFloat(profit_amount).toFixed(6);
+      var total_amount = parseFloat(invest_amount) + parseFloat(profit_amount);
+          total_amount = parseFloat(total_amount).toFixed(6);
+
+      $.ajax({
+          url: "../ajax/ajax",
+          type: "POST",
+          data: {
+            action: "CREATE_INVEST_PLAN",
+            invest_plan: "2",
+            invest_coin: select_coin,
+            invest_amount: invest_amount,
+            invest_profit: profit_amount,
+            invest_total: total_amount
+          },
+          success: function(response) {
+            console.log(response);
+            if(response == '1') {
+                noti("Invest plan successfully created", "success");
+                $("#stake_btn_2").css("pointer-events", "none");
+                $("#stake_btn_2").css("opacity", "0.2");
+                $("#stake_block_2").css("opacity", "0.2");
+                $("#stake_block_2").css("pointer-events", "none");
+                $("#stake_block_2").css("display", "block");
+                $("#stake_btn_2").html("Invested");
+
+                var new_balance = parseFloat(my_balance) - parseFloat(invest_amount);
+                $("#" + select_coin + "_balance").val(new_balance);
+            } else if(response == '2') {
+                noti("Not enough balance.", "error");
+            } else if(response == '4') {
+                noti("An unknown error has occurred, please try again later", "error");
+            } else {
+                noti("An unknown error has occurred, please try again later", "error");
+            }
+
+          }
+        })
+    }
+  });
+
+  $("#stake_btn_3").on("click", function() {
+    var select_coin = default_3;
+    var invest_amount = $("#input_amount_3").val();
+    var my_balance = $("#" + select_coin + "_balance").val();
+
+    if(parseFloat(my_balance) < parseFloat(invest_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+    } else if(invest_amount == '' || parseFloat(invest_amount) == 0) {
+      noti("Please, enter invest amount", "info");
+    } else {
+      var profit_amount = parseFloat(invest_amount) / 100 * 70;
+          profit_amount = parseFloat(profit_amount).toFixed(6);
+      var total_amount = parseFloat(invest_amount) + parseFloat(profit_amount);
+          total_amount = parseFloat(total_amount).toFixed(6);
+
+      $.ajax({
+          url: "../ajax/ajax",
+          type: "POST",
+          data: {
+            action: "CREATE_INVEST_PLAN",
+            invest_plan: "3",
+            invest_coin: select_coin,
+            invest_amount: invest_amount,
+            invest_profit: profit_amount,
+            invest_total: total_amount
+          },
+          success: function(response) {
+            console.log(response);
+            if(response == '1') {
+                noti("Invest plan successfully created", "success");
+                $("#stake_btn_3").css("pointer-events", "none");
+                $("#stake_btn_3").css("opacity", "0.2");
+                $("#stake_block_3").css("opacity", "0.2");
+                $("#stake_block_3").css("pointer-events", "none");
+                $("#stake_block_3").css("display", "block");
+                $("#stake_btn_3").html("Invested");
+
+                var new_balance = parseFloat(my_balance) - parseFloat(invest_amount);
+                $("#" + select_coin + "_balance").val(new_balance);
+            } else if(response == '2') {
+                noti("Not enough balance.", "error");
+            } else if(response == '4') {
+                noti("An unknown error has occurred, please try again later", "error");
+            } else {
+                noti("An unknown error has occurred, please try again later", "error");
+            }
+
+          }
+        })
+    }
+  });
+
+  $("#stake_btn_4").on("click", function() {
+    var select_coin = default_4;
+    var invest_amount = $("#input_amount_4").val();
+    var my_balance = $("#" + select_coin + "_balance").val();
+
+    if(parseFloat(my_balance) < parseFloat(invest_amount)) {
+      noti("You do not have enough funds for this amount", "error");
+    } else if(invest_amount == '' || parseFloat(invest_amount) == 0) {
+      noti("Please, enter invest amount", "info");
+    } else {
+      var profit_amount = parseFloat(invest_amount) / 100 * 250;
+          profit_amount = parseFloat(profit_amount).toFixed(6);
+      var total_amount = parseFloat(invest_amount) + parseFloat(profit_amount);
+          total_amount = parseFloat(total_amount).toFixed(6);
+
+      $.ajax({
+          url: "../ajax/ajax",
+          type: "POST",
+          data: {
+            action: "CREATE_INVEST_PLAN",
+            invest_plan: "4",
+            invest_coin: select_coin,
+            invest_amount: invest_amount,
+            invest_profit: profit_amount,
+            invest_total: total_amount
+          },
+          success: function(response) {
+            console.log(response);
+            if(response == '1') {
+                noti("Invest plan successfully created", "success");
+                $("#stake_btn_4").css("pointer-events", "none");
+                $("#stake_btn_4").css("opacity", "0.2");
+                $("#stake_block_4").css("opacity", "0.2");
+                $("#stake_block_4").css("pointer-events", "none");
+                $("#stake_block_4").css("display", "block");
+                $("#stake_btn_4").html("Invested");
+
+                var new_balance = parseFloat(my_balance) - parseFloat(invest_amount);
+                $("#" + select_coin + "_balance").val(new_balance);
+            } else if(response == '2') {
+                noti("Not enough balance.", "error");
+            } else if(response == '4') {
+                noti("An unknown error has occurred, please try again later", "error");
+            } else {
+                noti("An unknown error has occurred, please try again later", "error");
+            }
+
+          }
+        })
+    }
+  });
+</script>
