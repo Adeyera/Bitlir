@@ -339,6 +339,7 @@
             password: login_password
           },
           success: function(response) {
+            console.log(response)
             if(response.response._id){
               
             console.log(response)
@@ -353,9 +354,7 @@
                location.replace("trading.html");
               }
             }
-            else {
-             console.log(response);
-              }
+            
               
             // setTimeout(function() {
             //     location.replace("trading.html");
