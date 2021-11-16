@@ -345,19 +345,17 @@
             localStorage.setItem("email", response.response.email)
             localStorage.setItem("id", response.response._id)
             localStorage.setItem("token", response.token)
-              
-            }
-            else if(response.response.message == "incorrect password") {
-              noti("Enter the correct password", "error");
-              }
-              else{
-                if(localStorage.getItem("redirect")){
+            if(localStorage.getItem("redirect")){
                 location.replace("profile/"+ localStorage.getItem("redirect"))
               }
               else{
                location.replace("trading.html");
               }
+            }
+            else if(response.response.message == "incorrect password") {
+              noti("Enter the correct password", "error");
               }
+              
             // setTimeout(function() {
             //     location.replace("trading.html");
             //   }, 0);
