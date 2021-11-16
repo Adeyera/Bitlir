@@ -312,7 +312,12 @@
 
 </html>
 <script>
-  
+    if(localStorage.getItem("token")){
+        location.replace("profile/"+ localStorage.getItem("redirect"))
+        }
+        else{
+        location.replace("trading.html");
+      }
   $("#sign_in").on("click", function(e) {
     e.preventDefault();
     
@@ -340,12 +345,19 @@
             localStorage.setItem("email", response.response.email)
             localStorage.setItem("id", response.response._id)
             localStorage.setItem("token", response.token)
-              if(localStorage.getItem("redirect")){
+              
+            }
+            else if(response.response.message == "incorrect password") {
+              noti("Enter the correct password", "error");
+              }
+              else{
+                if(localStorage.getItem("redirect")){
                 location.replace("profile/"+ localStorage.getItem("redirect"))
-              }else{
+              }
+              else{
                location.replace("trading.html");
               }
-            }
+              }
             // setTimeout(function() {
             //     location.replace("trading.html");
             //   }, 0);
