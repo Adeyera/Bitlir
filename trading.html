@@ -1037,15 +1037,7 @@ src="assets/profile/avatar.svg" alt="avatars">
       $("#sellbuy_warning").css("display", "none");
     });
 
-    $("#chat_send").on("click", function () {
-      var chat_message = $("#chat_input").val();
-
-      if (chat_message == "") {
-        noti("Please enter text to send", "error");
-      } else {
-        navbarVal.appendChild(chat_message)
-      }
-    });
+    
 
 
     var pairs_value = $("#pairs").val();
