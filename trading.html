@@ -752,76 +752,7 @@
             <div class="market-news mt15">
               <h2 class="heading">Chat</h2>
               <ul id="chat_list">
-                <li>
-                  <a href="">
-                    <div class="username">thaddeusb l1:</div>
-                    so you bought a coin that was given away by the million fo rfree and you are now complaining b/c it
-                    is worth nothing??? maybe crypto isn`t for you
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username">thaddeusb l1:</div>
-                    anyone dumb enough to buy dice "scammed" themselves by not having a brain
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username">thaddeusb l1:</div>
-                    and cant other wallet dice more
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username"> online03 l0:</div>
-                    and cant other wallet dice more
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username">thaddeusb l1:</div>
-                    dice is a free Localhost only coin
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username"> boastkit:</div>
-                    thaddeusb, probably this is one of the reasons support can`t work properly - thousands of tickets
-                    from morons weekly
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username">thaddeusb l1:</div>
-                    boastkit, yep
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username">thaddeusb l1:</div>
-                    the number of ppl "investing" in stuff they don`t understand and then ciomplaining about the results
-                    is baffling
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username"> online03 l0: </div>
-                    hahahahahahahahahahahahahahahahahahahahahaha meybe
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="username"> cobratoontje:</div>
-                    dice just needs 88821.89293068 btc to reach 10 sats, lol
-                  </a>
-                </li>
-                <li >
-                  <a href="">
-                    <div class="username"> thaddeusb l1: </div>
-                    new add today, i think, hence the price rice in the real market
-                  </a>
-                </li>
-
+                
 
               </ul>
 
@@ -1008,12 +939,86 @@ src="assets/profile/avatar.svg" alt="avatars">
 
       $("#chat_send").on("click", function () {
         var chat_message = $("#chat_input").val();
+        var chats = [
+        `<li>
+                  <a href="">
+                    <div class="username">thaddeusb l1:</div>
+                    so you bought a coin that was given away by the million fo rfree and you are now complaining b/c it
+                    is worth nothing??? maybe crypto isn't for you
+                  </a>
+                </li>`,
+                `<li>
+                  <a href="">
+                    <div class="username">thaddeusb l1:</div>
+                    anyone dumb enough to buy dice "scammed" themselves by not having a brain
+                  </a>
+                </li>`,
+                `<li>
+                  <a href="">
+                    <div class="username">thaddeusb l1:</div>
+                    and cant other wallet dice more
+                  </a>
+                </li>`,
+               ` <li>
+                  <a href="">
+                    <div class="username"> online03 l0:</div>
+                    and cant other wallet dice more
+                  </a>
+                </li>`,
+                `<li>
+                  <a href="">
+                    <div class="username">thaddeusb l1:</div>
+                    dice is a free Localhost only coin
+                  </a>
+                </li>`,
+               ` <li>
+                  <a href="">
+                    <div class="username"> boastkit:</div>
+                    thaddeusb, probably this is one of the reasons support can't work properly - thousands of tickets
+                    from morons weekly
+                  </a>
+                </li>`,
+                `<li>
+                  <a href="">
+                    <div class="username">thaddeusb l1:</div>
+                    boastkit, yep
+                  </a>
+                </li>`,
+               ` <li>
+                  <a href="">
+                    <div class="username">thaddeusb l1:</div>
+                    the number of ppl "investing" in stuff they don't understand and then ciomplaining about the results
+                    is baffling
+                  </a>
+                </li>`,
+                `<li>
+                  <a href="">
+                    <div class="username"> online03 l0: </div>
+                    hahahahahahahahahahahahahahahahahahahahahaha meybe
+                  </a>
+                </li>`,
+                `<li>
+                  <a href="">
+                    <div class="username"> cobratoontje:</div>
+                    dice just needs 88821.89293068 btc to reach 10 sats, lol
+                  </a>
+                </li>`,
+               ` <li >
+                  <a href="">
+                    <div class="username"> thaddeusb l1: </div>
+                    new add today, i think, hence the price rice in the real market
+                  </a>
+                </li>`
+
+        ]
         var newMessage = `<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`
         if (chat_message == "") {
           noti("Please enter text to send", "error");
         } else {
-
-          document.getElementById("chat_list").insertAdjacentHTML('afterbegin',newMessage);
+          chats.append(newMessage)
+          for (let i=0;i<chats.length; i++) {
+          document.getElementById("chat_list").insertAdjacentHTML('afterbegin',chats[i]);
+          }
         }
       });
     }
