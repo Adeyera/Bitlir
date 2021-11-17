@@ -1002,13 +1002,14 @@ src="assets/profile/avatar.svg" alt="avatars">
                 </div>`
 
     }
+
     $("#chat_send").on("click", function () {
       var chat_message = $("#chat_input").val();
 
       if (chat_message == "") {
         noti("Please enter text to send", "error");
       } else {
-        document.getElementById("chat_list").append(`<li> + <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> <li>`)
+        document.getElementById("chat_list").append(`<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`)
       }
     });
 
