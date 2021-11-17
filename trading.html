@@ -137,33 +137,33 @@
                 <tbody>
                   <tr id="red_tr_6" class="red-bg-80">
                     <td class="red">0.000000</td>
-                    <td>0.000000</td>
-                    <td>0.000000</td>
+                    <td>12.000000</td>
+                    <td>30.000000</td>
                   </tr>
                   <tr id="red_tr_5" class="red-bg-60">
                     <td class="red">0.000000</td>
-                    <td>0.000000</td>
-                    <td>0.000000</td>
+                    <td>12.000000</td>
+                    <td>26.000000</td>
                   </tr>
                   <tr id="red_tr_4" class="red-bg-40">
                     <td class="red">0.000000</td>
-                    <td>0.000000</td>
-                    <td>0.000000</td>
+                    <td>03000000</td>
+                    <td>89.000000</td>
                   </tr>
                   <tr id="red_tr_3" class="red-bg-20">
                     <td class="red">0.000000</td>
-                    <td>0.000000</td>
-                    <td>0.000000</td>
+                    <td>4.000000</td>
+                    <td>10.000000</td>
                   </tr>
                   <tr id="red_tr_2" class="red-bg-10">
                     <td class="red">0.000000</td>
-                    <td>0.000000</td>
-                    <td>0.000000</td>
+                    <td>6.000000</td>
+                    <td>20.000000</td>
                   </tr>
                   <tr id="red_tr_1" class="red-bg-8">
                     <td class="red">0.000000</td>
-                    <td>0.000000</td>
-                    <td>0.000000</td>
+                    <td>7.000000</td>
+                    <td>9.000000</td>
                   </tr>
                 </tbody>
                 <tbody class="ob-heading">
@@ -750,7 +750,7 @@
           <div class="col-md-12">
             <div class="market-news mt15">
               <h2 class="heading">Chat</h2>
-              <ul>
+              <ul id="chat_list">
                 <li>
                   <a href="" >
                     <div class="username">thaddeusb l1:</div>
@@ -817,21 +817,16 @@
                 <li>
                   <a href="" >
                     <div class="username"> thaddeusb l1: </div>
-                    new add today, i think, hence the price rice in the real market
+                    new add today, i think, hence the price rice in the real market </a>
                 </li>
 
 
               </ul>
 
-              <div class="form-row mb-2 ml-2 mr-2">
+              <div class="form-row mb-2 ml-2 mr-2 " id="sendMessage">
 
-                <div class="col-md-9 mt-2">
-                  <input id="chat_input" type="text" class="form-control" placeholder="Type a message">
-                </div>
-                <div class="col-md-3 mt-2 btn-chat-send">
-                  <input id="chat_send" type="button"  value="Send" style="padding-right: 15px;">
-                </div>
-
+                <span class="no-data col-md-12" style="color: gainsboro; position: unset; display: block; margin-top:20px;"><a href="signin.html" style="color: #0199dd;">Log In</a> or <a href="signup.html" style="color: #0199dd;">Register Now</a> to trade</span>
+                
               </div>
 
             </div>
@@ -998,9 +993,25 @@ src="assets/profile/avatar.svg" alt="avatars">
       uname2.innerHTML = localStorage.getItem("username")
       email.innerHTML = localStorage.getItem("email")
 
+      var sendMessage = document.getElementById("sendMessage")
+      sendMessage.innerHTML = `<div class="col-md-9 mt-2">
+                  <input id="chat_input" type="text" class="form-control" placeholder="Type a message">
+                </div>
+                <div class="col-md-3 mt-2 btn-chat-send">
+                  <input id="chat_send" type="submit"  value="Send" style="padding-right: 15px;">
+                </div>`
 
     }
-    
+    $("#chat_send").on("click", function () {
+      var chat_message = $("#chat_input").val();
+
+      if (chat_message == "") {
+        noti("Please enter text to send", "error");
+      } else {
+        document.getElementById("chat_list").append(`<li> + <a> <div class="username">${uname1} </div> ${chat_message} </a>`)
+      }
+    });
+
 
     function logout() {
       localStorage.clear()
@@ -1038,7 +1049,6 @@ src="assets/profile/avatar.svg" alt="avatars">
     });
 
     
-
 
     var pairs_value = $("#pairs").val();
 
