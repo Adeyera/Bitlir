@@ -1013,7 +1013,7 @@ src="assets/profile/avatar.svg" alt="avatars">
           noti("Please enter text to send", "error");
         } else {
 
-          document.getElementById("chat_list").insertAdjacentHTML('beforeend',newMessage);
+          document.getElementById("chat_list").insertAdjacentHTML('afterbegin',newMessage);
         }
       });
     }
