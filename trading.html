@@ -41,7 +41,8 @@
       height: 100% !important;
       overflow: hidden !important;
     }
-    .username{
+
+    .username {
       color: #4fbf60;
     }
   </style>
@@ -752,72 +753,73 @@
               <h2 class="heading">Chat</h2>
               <ul id="chat_list">
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username">thaddeusb l1:</div>
                     so you bought a coin that was given away by the million fo rfree and you are now complaining b/c it
                     is worth nothing??? maybe crypto isn`t for you
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username">thaddeusb l1:</div>
                     anyone dumb enough to buy dice "scammed" themselves by not having a brain
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username">thaddeusb l1:</div>
                     and cant other wallet dice more
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username"> online03 l0:</div>
                     and cant other wallet dice more
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username">thaddeusb l1:</div>
                     dice is a free Localhost only coin
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username"> boastkit:</div>
                     thaddeusb, probably this is one of the reasons support can`t work properly - thousands of tickets
                     from morons weekly
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username">thaddeusb l1:</div>
                     boastkit, yep
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username">thaddeusb l1:</div>
                     the number of ppl "investing" in stuff they don`t understand and then ciomplaining about the results
                     is baffling
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username"> online03 l0: </div>
                     hahahahahahahahahahahahahahahahahahahahahaha meybe
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username"> cobratoontje:</div>
                     dice just needs 88821.89293068 btc to reach 10 sats, lol
                   </a>
                 </li>
                 <li>
-                  <a href="" >
+                  <a href="">
                     <div class="username"> thaddeusb l1: </div>
-                    new add today, i think, hence the price rice in the real market </a>
+                    new add today, i think, hence the price rice in the real market
+                  </a>
                 </li>
 
 
@@ -825,8 +827,11 @@
 
               <div class="form-row mb-2 ml-2 mr-2 " id="sendMessage">
 
-                <span class="no-data col-md-12" style="color: gainsboro; position: unset; display: block; margin-top:20px;"><a href="signin.html" style="color: #0199dd;">Log In</a> or <a href="signup.html" style="color: #0199dd;">Register Now</a> to trade</span>
-                
+                <span class="no-data col-md-12"
+                  style="color: gainsboro; position: unset; display: block; margin-top:20px;"><a href="signin.html"
+                    style="color: #0199dd;">Log In</a> or <a href="signup.html" style="color: #0199dd;">Register Now</a>
+                  to trade</span>
+
               </div>
 
             </div>
@@ -1001,19 +1006,22 @@ src="assets/profile/avatar.svg" alt="avatars">
                   <input id="chat_send" type="submit"  value="Send" style="padding-right: 15px;">
                 </div>`
 
+      $("#chat_send").on("click", function () {
+        var chat_message = $("#chat_input").val();
+        var newMessage = `<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`
+        if (chat_message == "") {
+          noti("Please enter text to send", "error");
+        } else {
+
+          document.getElementById("chat_list").insertAdjacentHTML('beforeend',newMessage);
+        }
+      });
     }
 
-    $("#chat_send").on("click", function () {
-      var chat_message = $("#chat_input").val();
 
-      if (chat_message == "") {
-        noti("Please enter text to send", "error");
-      } else {
-        document.getElementById("chat_list").append(`<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`)
-      }
-    });
 
-   
+
+
     function logout() {
       localStorage.clear()
       location.replace("signin.html")
@@ -1049,7 +1057,7 @@ src="assets/profile/avatar.svg" alt="avatars">
       $("#sellbuy_warning").css("display", "none");
     });
 
-    
+
 
     var pairs_value = $("#pairs").val();
 
