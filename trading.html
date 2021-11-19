@@ -1039,7 +1039,7 @@
 
     var liveTrading = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
     liveTrading.onmessage = function(response) {
-  console.log(response)
+  console.log(response.data)
     // $.ajax({
     //   url: "ajax/trading_live",
     //   type: "POST",
