@@ -1091,7 +1091,7 @@
           var two_price_green = parseFloat(19) * parseFloat(3.542);
 
           // red order book
-          $("#mCSB_1_container").prepend('<tr id="red_tr_' + new_tr_block_id + '" class="red-bg' + random_number() + '"><td class="red">' + parseFloat(json[json_red_count].p) + '</td> <td>' + json[json_red_count].q + '</td><td>' + two_price_red.toFixed(4) + '</td> </tr>');
+          $("#mCSB_1_container").prepend('<tr id="red_tr_' + new_tr_block_id + '" class="red-bg' + random_number() + '"><td class="red">' + parseFloat(json.p) + '</td> <td>' + json.json_red_count.q + '</td><td>' + two_price_red.toFixed(4) + '</td> </tr>');
 
           // green order book
           // $("#mCSB_3_container").prepend('<tr id="green_tr_' + new_tr_block_id + '" class="green-bg' + random_number() + '"><td class="green">' + parseFloat(json[json_green_count][0]) + '</td> <td>' + json[json_green_count][1] + '</td><td>' + two_price_green.toFixed(4) + '</td> </tr>');
