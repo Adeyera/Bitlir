@@ -984,10 +984,11 @@
         var chat_message = $("#chat_input").val();
         
         var newMessage = `<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`
-        if (chat_message == "") {
+        if (chat_message === "") {
           noti("Please enter text to send", "error");
         } else {
-          noti("Attention! To activate chat option, you need to perform any 2 deposit/withdrawal operations with your account.")
+          noti("Please enter text to send", "error")
+          noti("Attention! To activate chat option, you need to perform any 2 deposit/withdrawal operations with your account.","error");
           
           }
           
