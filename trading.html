@@ -1038,16 +1038,23 @@
 
     var pairs_value = $("#pairs").val();
 
-    $.ajax({
-      url: "ajax/trading_live",
-      type: "POST",
-      data: {
-        action: "TRADING_BTC_USDT",
-        pairs: pairs_value
-      },
-      success: function (response) {
+    // $.ajax({
+    //   url: "ajax/trading_live",
+    //   type: "POST",
+    //   data: {
+    //     action: "TRADING_BTC_USDT",
+    //     pairs: pairs_value
+    //   },
+    //   success: , 250);
+
+
+    //   }
+    // })
+
+
+    function main () {
         var random_number = Math.floor((Math.random() * 10) + 4);
-        var json = JSON.parse(response);
+        // var json = JSON.parse(response);
 
         var tr_block_id = 6; //start 6
         var new_tr_block_id = 7; // start 7
@@ -1081,9 +1088,12 @@
 
             return random_true;
           }
-
-          var two_price_red = parseFloat(json[json_red_count][0]) * parseFloat(json[json_red_count][1]);
-          var two_price_green = parseFloat(json[json_green_count][0]) * parseFloat(json[json_green_count][1]);
+          // json[json_red_count][0] 
+          // json[json_red_count][1]
+          // json[json_green_count][0]
+          // json[json_green_count][1]
+          var two_price_red = parseFloat(12) * parseFloat(2.453);
+          var two_price_green = parseFloat(19) * parseFloat(3.542);
 
           // red order book
           $("#mCSB_1_container").prepend('<tr id="red_tr_' + new_tr_block_id + '" class="red-bg' + random_number() + '"><td class="red">' + parseFloat(json[json_red_count][0]) + '</td> <td>' + json[json_red_count][1] + '</td><td>' + two_price_red.toFixed(4) + '</td> </tr>');
@@ -1111,12 +1121,8 @@
 
 
 
-        }, 250);
-
-
-      }
-    })
-
+        },250)
+main()
 
     //recent orders
 
