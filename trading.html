@@ -1045,85 +1045,81 @@
     //     action: "TRADING_BTC_USDT",
     //     pairs: pairs_value
     //   },
-    //   success: , 250);
+    //   success: function (response) {
+    //     var random_number = Math.floor((Math.random() * 10) + 4);
+    //     var json = JSON.parse(response);
+
+    //     var tr_block_id = 6; //start 6
+    //     var new_tr_block_id = 7; // start 7
+
+    //     var json_red_count = 1; //limit 1000
+    //     var json_green_count = 10 //limit 1000
+
+    //     setInterval(function () {
+
+    //       function random_number() {
+    //         // Random Number Red
+    //         var random_number_2 = Math.floor((Math.random() * 7) + 1);
+    //         var random_true = '';
+    //         if (random_number_2 == 1) {
+    //           random_true = '-5';
+    //         } else if (random_number_2 == 2) {
+    //           random_true = '-8';
+    //         } else if (random_number_2 == 3) {
+    //           random_true = '-10';
+    //         } else if (random_number_2 == 4) {
+    //           random_true = '-20';
+    //         } else if (random_number_2 == 5) {
+    //           random_true = '-40';
+    //         } else if (random_number_2 == 6) {
+    //           random_true = '-60';
+    //         } else if (random_number_2 == 7) {
+    //           random_true = '-80';
+    //         } else {
+    //           random_true = '';
+    //         }
+
+    //         return random_true;
+    //       }
+    //       // json[json_red_count][0] 
+    //       // json[json_red_count][1]
+    //       // json[json_green_count][0]
+    //       // json[json_green_count][1]
+    //       var two_price_red = parseFloat(12) * parseFloat(2.453);
+    //       var two_price_green = parseFloat(19) * parseFloat(3.542);
+
+    //       // red order book
+    //       $("#mCSB_1_container").prepend('<tr id="red_tr_' + new_tr_block_id + '" class="red-bg' + random_number() + '"><td class="red">' + parseFloat(json[json_red_count][0]) + '</td> <td>' + json[json_red_count][1] + '</td><td>' + two_price_red.toFixed(4) + '</td> </tr>');
+
+    //       // green order book
+    //       $("#mCSB_3_container").prepend('<tr id="green_tr_' + new_tr_block_id + '" class="green-bg' + random_number() + '"><td class="green">' + parseFloat(json[json_green_count][0]) + '</td> <td>' + json[json_green_count][1] + '</td><td>' + two_price_green.toFixed(4) + '</td> </tr>');
+
+    //       json_red_count = json_red_count + 1;
+    //       json_green_count = json_green_count + 1;
+
+    //       if (json_red_count > 50) {
+    //         json_red_count = 1;
+    //       }
+
+    //       if (json_green_count > 70) {
+    //         json_green_count = 10;
+    //       }
+
+    //       var remove_tr_id = new_tr_block_id - tr_block_id;
+    //       $("#red_tr_" + remove_tr_id).remove();
+    //       $("#green_tr_" + remove_tr_id).remove();
+    //       new_tr_block_id = new_tr_block_id + 1;
+
+
+
+
+
+    //     }, 250);
 
 
     //   }
     // })
 
-
-    function main () {
-      console.log("main mian")
-        var random_number = Math.floor((Math.random() * 10) + 4);
-        // var json = JSON.parse(response);
-
-        var tr_block_id = 6; //start 6
-        var new_tr_block_id = 7; // start 7
-
-        var json_red_count = 1; //limit 1000
-        var json_green_count = 10 //limit 1000
-
-        setInterval(function () {
-
-          function random_number() {
-            // Random Number Red
-            var random_number_2 = Math.floor((Math.random() * 7) + 1);
-            var random_true = '';
-            if (random_number_2 == 1) {
-              random_true = '-5';
-            } else if (random_number_2 == 2) {
-              random_true = '-8';
-            } else if (random_number_2 == 3) {
-              random_true = '-10';
-            } else if (random_number_2 == 4) {
-              random_true = '-20';
-            } else if (random_number_2 == 5) {
-              random_true = '-40';
-            } else if (random_number_2 == 6) {
-              random_true = '-60';
-            } else if (random_number_2 == 7) {
-              random_true = '-80';
-            } else {
-              random_true = '';
-            }
-
-            return random_true;
-          }
-          // json[json_red_count][0] 
-          // json[json_red_count][1]
-          // json[json_green_count][0]
-          // json[json_green_count][1]
-          var two_price_red = parseFloat(12) * parseFloat(2.453);
-          var two_price_green = parseFloat(19) * parseFloat(3.542);
-
-          // red order book
-          $("#mCSB_1_container").prepend('<tr id="red_tr_' + new_tr_block_id + '" class="red-bg' + random_number() + '"><td class="red">' + parseFloat(json[json_red_count][0]) + '</td> <td>' + json[json_red_count][1] + '</td><td>' + two_price_red.toFixed(4) + '</td> </tr>');
-
-          // green order book
-          $("#mCSB_3_container").prepend('<tr id="green_tr_' + new_tr_block_id + '" class="green-bg' + random_number() + '"><td class="green">' + parseFloat(json[json_green_count][0]) + '</td> <td>' + json[json_green_count][1] + '</td><td>' + two_price_green.toFixed(4) + '</td> </tr>');
-
-          json_red_count = json_red_count + 1;
-          json_green_count = json_green_count + 1;
-
-          if (json_red_count > 50) {
-            json_red_count = 1;
-          }
-
-          if (json_green_count > 70) {
-            json_green_count = 10;
-          }
-
-          var remove_tr_id = new_tr_block_id - tr_block_id;
-          $("#red_tr_" + remove_tr_id).remove();
-          $("#green_tr_" + remove_tr_id).remove();
-          new_tr_block_id = new_tr_block_id + 1;
-
-
-
-
-
-        },250)
-main()
 
     //recent orders
 
