@@ -936,21 +936,10 @@ src="assets/profile/avatar.svg" alt="avatars">
                 <div class="col-md-3 mt-2 btn-chat-send">
                   <input id="chat_send" type="submit"  value="Send" >
                 </div>`
-                var chatting = document.getElementById("chat_send")
-                chatting.addEventListener('click', function() {
-                 
-        
-        if (chat_message == "") {
-          noti("Please enter text to send", "error");
-        } else {
-          chats.append(newMessage)
-          
-          }
-          
-      });
-    }
-    var chat_message = $("#chat_input").val();
-    var chats = [
+
+      $("#chat_send").on("click", function () {
+        var chat_message = $("#chat_input").val();
+        var chats = [
         `<li>
                   <a href="">
                     <div class="username">thaddeusb l1:</div>
@@ -1023,9 +1012,17 @@ src="assets/profile/avatar.svg" alt="avatars">
 
         ]
         var newMessage = `<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`
-        for (let i=0;i<chats.length; i++) {
+        if (chat_message == "") {
+          noti("Please enter text to send", "error");
+        } else {
+          chats.append(newMessage)
+          
+          }
+          for (let i=0;i<chats.length; i++) {
           document.getElementById("chat_list").insertAdjacentHTML('afterbegin',chats[i]);
         }
+      });
+    }
 
 
 
