@@ -1136,8 +1136,8 @@
         setInterval(function () {
 
 
-          var json_live_price = parseFloat(json.p);
-          var json_live_amount = parseFloat(json.q);
+          var json_live_price = parseFloat(json_price.p);
+          var json_live_amount = parseFloat(json_price.q);
           var json_live_amount_fix = json_live_amount.toFixed(7);
           // var json_live_m = json_price[json_count][2];
           json_count = json_count + 1;
@@ -1167,7 +1167,7 @@
           $("#recent_tr_" + remove_recent_id).remove();
           recent_new_tr_block_id = recent_new_tr_block_id + 1;
 
-        }, 500);
+        }, 250);
 
 
 
