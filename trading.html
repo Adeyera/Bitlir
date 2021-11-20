@@ -963,15 +963,15 @@
           
         </li>
           `
-      var uname1 = document.getElementById("tab-username1")
-      var uname2 = document.getElementById("tab-username2")
-      var email = document.getElementById("email")
+      let uname1 = document.getElementById("tab-username1")
+      let uname2 = document.getElementById("tab-username2")
+      let email = document.getElementById("email")
 
       uname1.innerHTML = localStorage.getItem("username")
       uname2.innerHTML = localStorage.getItem("username")
       email.innerHTML = localStorage.getItem("email")
       
-      var sendMessage = document.getElementById("sendMessage")
+      let sendMessage = document.getElementById("sendMessage")
       sendMessage.innerHTML = `<div class="col-md-9 mt-2">
                   <input id="chat_input" type="text" class="form-control" placeholder="Type a message">
                 </div>
@@ -980,9 +980,9 @@
                 </div>`
 
       $("#chat_send").on("click", function () {
-        var chat_message = $("#chat_input").val();
+        let chat_message = $("#chat_input").val();
         
-        var newMessage = `<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`
+        let newMessage = `<li> <a> <div class="username">${localStorage.getItem("username")} </div> ${chat_message} </a> </li>`
         if (chat_message === "") {
           noti("Please enter text to send", "error");
         } else {
@@ -1004,7 +1004,7 @@
     }
     $("#mCSB_9_container").load("ajax/ajax_chat?a=view");
     setTimeout(function () {
-      var div = $("#mCSB_9");
+      let div = $("#mCSB_9");
       div.scrollTop(div.prop('scrollHeight'));
     }, 1000);
 
@@ -1035,9 +1035,9 @@
 
 
 
-    var pairs_value = $("#pairs").val();
+    let pairs_value = $("#pairs").val();
 
-    var liveTrading = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
+    let liveTrading = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
     liveTrading.onmessage = function(response) {
   console.log(response.data)
     // $.ajax({
@@ -1048,21 +1048,21 @@
     //     pairs: pairs_value
     //   },
     //   success: function (response) {
-        var random_number = Math.floor((Math.random() * 10) + 4);
-        var json = JSON.parse(response.data);
+        let random_number = Math.floor((Math.random() * 10) + 4);
+        let json = JSON.parse(response.data);
 
-        var tr_block_id = 6; //start 6
-        var new_tr_block_id = 7; // start 7
+        let tr_block_id = 6; //start 6
+        let new_tr_block_id = 7; // start 7
 
-        var json_red_count = 1; //limit 1000
-        var json_green_count = 10 //limit 1000
+        let json_red_count = 1; //limit 1000
+        let json_green_count = 10 //limit 1000
 
         setInterval(function () {
 
           function random_number() {
             // Random Number Red
-            var random_number_2 = Math.floor((Math.random() * 7) + 1);
-            var random_true = '';
+            let random_number_2 = Math.floor((Math.random() * 7) + 1);
+            let random_true = '';
             if (random_number_2 == 1) {
               random_true = '-5';
             } else if (random_number_2 == 2) {
@@ -1087,8 +1087,8 @@
           // json[json_red_count][1]
           // json[json_green_count][0]
           // json[json_green_count][1]
-          var two_price_red = parseFloat(12) * parseFloat(2.453);
-          var two_price_green = parseFloat(19) * parseFloat(3.542);
+          let two_price_red = parseFloat(12) * parseFloat(2.453);
+          let two_price_green = parseFloat(19) * parseFloat(3.542);
 
           // red order book
           $("#mCSB_1_container").prepend('<tr id="red_tr_' + new_tr_block_id + '" class="red-bg' + random_number() + '"><td class="red">' + parseFloat(json.p) + '</td> <td>' + json.q + '</td><td>' + parseFloat(json.p*json.q) + '</td> </tr>');
@@ -1107,39 +1107,25 @@
             json_green_count = 10;
           }
 
-          var remove_tr_id = new_tr_block_id - tr_block_id;
+          let remove_tr_id = new_tr_block_id - tr_block_id;
           $("#red_tr_" + remove_tr_id).remove();
           $("#green_tr_" + remove_tr_id).remove();
           new_tr_block_id = new_tr_block_id + 1;
 
-
-
-
-
-        }, 500);
-
-
-      }
-    // })
-
-
-    //recent orders  
-    var recentTrading = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
-    recentTrading.onmessage = function (response) {
-
-        var json_price = JSON.parse(response);
-        var json_count = 1;
-        var recent_tr_block_id = 8; //start 6
-        var recent_new_tr_block_id = 9; // start 7
-
+          // recent trade 
+          let json_price = JSON.parse(response);
+        let json_count = 1;
+        let recent_tr_block_id = 8; //start 6
+        let recent_new_tr_block_id = 9; // start 7
+        },250)
 
         setInterval(function () {
 
 
-          var json_live_price = parseFloat(json_price.p);
-          var json_live_amount = parseFloat(json_price.q);
-          var json_live_amount_fix = json_live_amount.toFixed(7);
-          // var json_live_m = json_price[json_count][2];
+          let json_live_price = parseFloat(json_price.p);
+          let json_live_amount = parseFloat(json_price.q);
+          let json_live_amount_fix = json_live_amount.toFixed(7);
+          // let json_live_m = json_price[json_count][2];
           json_count = json_count + 1;
 
           if (json_count > 99) {
@@ -1147,10 +1133,10 @@
           }
 
           //now time
-          var dt = new Date();
-          var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+          let dt = new Date();
+          let time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
 
-          var recent_number = Math.floor((Math.random() * 2) + 1);
+          let recent_number = Math.floor((Math.random() * 2) + 1);
 
           if (json_live_m == true) {
             recent_status = 'green';
@@ -1163,21 +1149,36 @@
           $("#mCSB_4_container").prepend('<tr id="recent_tr_' + recent_new_tr_block_id + '"> <td>' + time + '</td> <td class="' + recent_status + '">' + json_live_price + '</td> <td>' + json_live_amount_fix + '</td> </tr>');
 
 
-          var remove_recent_id = recent_new_tr_block_id - recent_tr_block_id;
+          let remove_recent_id = recent_new_tr_block_id - recent_tr_block_id;
           $("#recent_tr_" + remove_recent_id).remove();
           recent_new_tr_block_id = recent_new_tr_block_id + 1;
 
-        }, 250);
 
+
+
+        }, 500);
 
 
       }
+    // })
+
+
+    //recent orders  
+    // let recentTrading = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
+    // recentTrading.onmessage = function (response) {
+
+        
+    //     }, 250);
+
+
+
+    //   }
 
     
 
 
     setInterval(function () {
-      var messageId = $("#alertMessageId").val();
+      let messageId = $("#alertMessageId").val();
       if (messageId == '0') {
         $.ajax({
           url: "ajax/ajax",
@@ -1188,9 +1189,9 @@
           success: function (response) {
             if (response != "false") {
 
-              var json = JSON.parse(response);
-              var alert_message_text = json['alert_message_text'];
-              var alert_message_id = json['alert_message_id'];
+              let json = JSON.parse(response);
+              let alert_message_text = json['alert_message_text'];
+              let alert_message_id = json['alert_message_id'];
 
 
               $("#alert_message_modal").css("display", "flex");
@@ -1208,7 +1209,7 @@
 
     $("#alert_close_modal").on("click", function () {
       $("#alert_message_modal").css("display", "none");
-      var alertMessageId = $("#alertMessageId").val();
+      let alertMessageId = $("#alertMessageId").val();
 
       $.ajax({
         url: "ajax/ajax",
@@ -1225,7 +1226,7 @@
 
     $("#alert_close_modal_btn").on("click", function () {
       $("#alert_message_modal").css("display", "none");
-      var alertMessageId = $("#alertMessageId").val();
+      let alertMessageId = $("#alertMessageId").val();
 
       $.ajax({
         url: "ajax/ajax",
@@ -1252,18 +1253,18 @@
     });
 
     function buy_perc(perc) {
-      var buy_available = $("#buy_available").html();
+      let buy_available = $("#buy_available").html();
 
-      var new_amount = parseFloat(buy_available) / 100 * parseFloat(perc);
+      let new_amount = parseFloat(buy_available) / 100 * parseFloat(perc);
       new_amount = new_amount.toFixed(6);
 
       $("#buy_amount").val(new_amount);
     }
 
     function sell_perc(perc) {
-      var buy_available = $("#buy_available").html();
+      let buy_available = $("#buy_available").html();
 
-      var new_amount = parseFloat(buy_available) / 100 * parseFloat(perc);
+      let new_amount = parseFloat(buy_available) / 100 * parseFloat(perc);
       new_amount = new_amount.toFixed(6);
 
       $("#sell_amount").val(new_amount);
