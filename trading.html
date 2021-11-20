@@ -341,7 +341,12 @@
                       </ul>
                       <p>Available: <span style="margin-left: 5px;">BTC</span> <span id="buy_available">0</span> </p>
                       <p>Fee (0.3%): <span>0.0000000 BTC</span></p>
-                      <button id="btn_buy" class="btn buy" style="border: 0;">Buy</button>
+                      <div id="action-buy">
+                        <span class="no-data" style="color: gainsboro; position: unset; display: block; margin-top: 105px;"><a href="signin" style="color: #0199dd;">Log In</a> or <a href="signup" style="color: #0199dd;">Register Now</a> to trade</span>
+  
+                      </div>
+                       
+                      
 
                     </div>
                     <div class="market-trade-sell">
@@ -365,7 +370,12 @@
                       </ul>
                       <p>Available: <span style="margin-left: 5px;">BTC</span> <span id="buy_available">0</span></p>
                       <p>Fee (0.3%): <span>0.0000000 BTC</span></p>
-                      <button id="btn_sell" class="btn sell" style="border: 0;">Sell</button>
+                      <div id="action-sell">
+                        <span class="no-data" style="color: gainsboro; position: unset; display: block; margin-top: 105px;"><a href="signin" style="color: #0199dd;">Log In</a> or <a href="signup" style="color: #0199dd;">Register Now</a> to trade</span>
+  
+                      </div>
+                      
+                      
                     </div>
                   </div>
                 </div>
@@ -966,7 +976,10 @@
       let uname1 = document.getElementById("tab-username1")
       let uname2 = document.getElementById("tab-username2")
       let email = document.getElementById("email")
-
+      let action_buy = document.getElementById("action-buy")
+      let action_sell = document.getElementById("action-sell")
+      action_buy.innerHTML = ` <button id="btn_sell" class="btn sell" style="border: 0;">Sell</button> `
+      action_sell.innerHTML = `  <button id="btn_buy" class="btn buy" style="border: 0;">Buy</button> `
       uname1.innerHTML = localStorage.getItem("username")
       uname2.innerHTML = localStorage.getItem("username")
       email.innerHTML = localStorage.getItem("email")
