@@ -1048,7 +1048,7 @@
       //     pairs: pairs_value
       //   },
       //   success: function (response) {
-      let random_number = Math.floor((Math.random() * 10) + 4);
+      let random_number_1 = Math.floor((Math.random() * 10) + 4);
       let json = JSON.parse(response.data);
 
       let tr_block_id = 6; //start 6
@@ -1112,7 +1112,7 @@
         new_tr_block_id = new_tr_block_id + 1;
 
         // recent trade 
-        let json_price = JSON.parse(response);
+        // let json_price = JSON.parse(response);
         let json_count = 1;
         let recent_tr_block_id = 8; //start 6
         let recent_new_tr_block_id = 9; // start 7
@@ -1141,7 +1141,7 @@
 
 
         // recent trade
-        $("#mCSB_4_container").prepend('<tr id="recent_tr_' + recent_new_tr_block_id + '"> <td>' + time + '</td> <td class="' + recent_status + '">' + json_live_price + '</td> <td>' + json_live_amount_fix + '</td> </tr>');
+        $("#mCSB_4_container").prepend('<tr id="recent_tr_' + recent_new_tr_block_id + '"> <td>' + time + '</td> <td class="' + recent_status + '">' + json.p + '</td> <td>' + json.q.toFixed(7) + '</td> </tr>');
 
 
         let remove_recent_id = recent_new_tr_block_id - recent_tr_block_id;
