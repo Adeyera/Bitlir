@@ -1120,12 +1120,17 @@
         let json_live_price = parseFloat(json.p);
         let json_live_amount = parseFloat(json.q);
         let json_live_amount_fix = json_live_amount.toFixed(7);
-        // let json_live_m = json_price[json_count][2];
+        
         json_count = json_count + 1;
+        const multiplesOf = (numbers) => {
+        return numbers%2 ==0
+        }
 
+         
         if (json_count > 99) {
           json_count = 1;
         }
+        let json_live_m = multiplesOf(json_count) ? true : false;
 
         //now time
         let dt = new Date();
